@@ -1,0 +1,2 @@
+C:\Users\Oier\AppData\Local\Temporary Projects\sgta.jokoa\bin\Debug\sgta.jokoa.exe.config
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\bin\Debug\sgta.jokoa.exe.config

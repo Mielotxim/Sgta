@@ -1,3 +1,13 @@
 C:\Users\Oier\AppData\Local\Temporary Projects\sgta.jokoa\bin\Debug\sgta.jokoa.exe.config
 C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\bin\Debug\sgta.jokoa.exe.config
 C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\bin\Debug\sgta.jokoa.exe.config
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\bin\Debug\sgta.jokoa.exe
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\bin\Debug\sgta.jokoa.pdb
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\bin\Debug\sgta.jokoa.xml
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.Form2.resources
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.Resources.resources
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.vbproj.GenerateResource.Cache
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.exe
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.xml
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.pdb
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.JOKOA.resources

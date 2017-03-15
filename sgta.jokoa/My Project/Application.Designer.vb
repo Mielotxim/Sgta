@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.sgta.jokoa.JOKOA
+            Me.MainForm = Global.sgta.jokoa.Menu
         End Sub
     End Class
 End Namespace

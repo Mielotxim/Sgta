@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class JOKOA
+Partial Class Menu
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -29,7 +29,7 @@ Partial Class JOKOA
         'Jokatu
         '
         Me.Jokatu.BackColor = System.Drawing.SystemColors.InfoText
-        Me.Jokatu.Font = New System.Drawing.Font("Oxygen", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.Jokatu.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.Jokatu.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Jokatu.Location = New System.Drawing.Point(12, 12)
         Me.Jokatu.Name = "Jokatu"
@@ -41,7 +41,7 @@ Partial Class JOKOA
         'Itxi
         '
         Me.Itxi.BackColor = System.Drawing.SystemColors.InactiveCaptionText
-        Me.Itxi.Font = New System.Drawing.Font("Oxygen", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Itxi.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Itxi.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Itxi.Location = New System.Drawing.Point(157, 12)
         Me.Itxi.Name = "Itxi"
@@ -50,7 +50,7 @@ Partial Class JOKOA
         Me.Itxi.Text = "Itxi"
         Me.Itxi.UseVisualStyleBackColor = False
         '
-        'JOKOA
+        'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -58,7 +58,7 @@ Partial Class JOKOA
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.Itxi)
         Me.Controls.Add(Me.Jokatu)
-        Me.Name = "JOKOA"
+        Me.Name = "Menu"
         Me.Text = "JOKOA"
         Me.ResumeLayout(False)
 

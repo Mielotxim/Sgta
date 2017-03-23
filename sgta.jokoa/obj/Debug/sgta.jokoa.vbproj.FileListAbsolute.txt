@@ -16,8 +16,13 @@ C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\bin\De
 C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\bin\Debug\sgta.jokoa.pdb
 C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\bin\Debug\sgta.jokoa.xml
 C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.Menu.resources
-C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.Form2.resources
 C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.Resources.resources
 C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.vbproj.GenerateResource.Cache
 C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.exe
 C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.pdb
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.vbprojResolveAssemblyReference.cache
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\bin\Debug\sgta.logika.dll
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\bin\Debug\sgta.logika.pdb
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\bin\Debug\sgta.logika.xml
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.Tablero.resources
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.Aukera.resources

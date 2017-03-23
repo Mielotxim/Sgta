@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form2
+Partial Class Tablero
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -24,13 +24,13 @@ Partial Class Form2
     Private Sub InitializeComponent()
         Me.SuspendLayout()
         '
-        'Form2
+        'Tablero
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 261)
-        Me.Name = "Form2"
-        Me.Text = "Form2"
+        Me.ClientSize = New System.Drawing.Size(451, 394)
+        Me.Name = "Tablero"
+        Me.Text = "Form1"
         Me.ResumeLayout(False)
 
     End Sub

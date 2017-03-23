@@ -46,6 +46,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="sgta.logika">
+      <HintPath>..\sgta.logika\bin\Debug\sgta.logika.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -70,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Tablero.Designer.vb">
+      <DependentUpon>Tablero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tablero.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Menu.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -77,10 +86,10 @@
       <DependentUpon>Menu.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <Compile Include="Aukera.Designer.vb">
+      <DependentUpon>Aukera.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form2.vb">
+    <Compile Include="Aukera.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -103,14 +112,17 @@
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <EmbeddedResource Include="Aukera.resx">
+      <DependentUpon>Aukera.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablero.resx">
+      <DependentUpon>Tablero.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

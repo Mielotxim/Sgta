@@ -5,8 +5,8 @@
     End Sub
 
     Private Sub Jokatu_Click(sender As Object, e As EventArgs) Handles Jokatu.Click
-        Dim form As Form2
-        form = New Form2
+        Dim form As Aukera
+        form = New Aukera
         form.Show()
         Me.Hide()
     End Sub

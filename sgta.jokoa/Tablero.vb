@@ -1,5 +1,6 @@
 ﻿Public Class Tablero
     Dim aux(23, 45) As Button
+    Dim aldaketa As Boolean
     Private Sub Tablero_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         For altuera As Integer = 1 To 12
             For zabalera As Integer = 1 To 23
@@ -8,6 +9,7 @@
                 b.Width = 40
                 b.Left = 40 * zabalera + 10
                 b.Top = 40 * altuera - 10
+
                 If zabalera = 14 Or zabalera = 13 Or zabalera = 15 Then
                     b.BackgroundImage = sgta.jokoa.My.Resources.water
                 Else
@@ -19,11 +21,15 @@
         Next
     End Sub
 
-    'Private Function botoiaJarri(ByVal i As Integer)
-    'Dim eran As Integer = 100
-    '   If i > 5 Then
-    '      eran = eran * 2
-    ' End If
-    'Return eran
-    'End Function
+    Private Sub clikatuta(zabalera As Integer, altuera As Integer)
+        If aldaketa Then
+            aux(zabalera, altuera).BackgroundImage = sgta.jokoa.My.Resources.water
+            altuera = False
+        Else
+            aux(zabalera, altuera).BackgroundImage = sgta.jokoa.My.Resources.water
+            altuera = True
+        End If
+
+    End Sub
+
 End Class

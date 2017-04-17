@@ -33,11 +33,13 @@ Partial Class Aukera
         Me.txtAtk = New System.Windows.Forms.TextBox()
         Me.txtMov = New System.Windows.Forms.TextBox()
         Me.btnPlay = New System.Windows.Forms.Button()
+        Me.btnPersonaje2 = New System.Windows.Forms.Button()
+        Me.btnPersonaje3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnPersonaje
         '
-        Me.btnPersonaje.Location = New System.Drawing.Point(104, 12)
+        Me.btnPersonaje.Location = New System.Drawing.Point(13, 12)
         Me.btnPersonaje.Name = "btnPersonaje"
         Me.btnPersonaje.Size = New System.Drawing.Size(75, 136)
         Me.btnPersonaje.TabIndex = 0
@@ -67,7 +69,7 @@ Partial Class Aukera
         'lblHp
         '
         Me.lblHp.AutoSize = True
-        Me.lblHp.Location = New System.Drawing.Point(64, 194)
+        Me.lblHp.Location = New System.Drawing.Point(51, 194)
         Me.lblHp.Name = "lblHp"
         Me.lblHp.Size = New System.Drawing.Size(24, 13)
         Me.lblHp.TabIndex = 3
@@ -77,7 +79,7 @@ Partial Class Aukera
         'lblDef
         '
         Me.lblDef.AutoSize = True
-        Me.lblDef.Location = New System.Drawing.Point(61, 227)
+        Me.lblDef.Location = New System.Drawing.Point(51, 227)
         Me.lblDef.Name = "lblDef"
         Me.lblDef.Size = New System.Drawing.Size(27, 13)
         Me.lblDef.TabIndex = 4
@@ -96,7 +98,7 @@ Partial Class Aukera
         '
         'txtHp
         '
-        Me.txtHp.Location = New System.Drawing.Point(92, 191)
+        Me.txtHp.Location = New System.Drawing.Point(84, 191)
         Me.txtHp.Name = "txtHp"
         Me.txtHp.ReadOnly = True
         Me.txtHp.Size = New System.Drawing.Size(36, 20)
@@ -105,7 +107,7 @@ Partial Class Aukera
         '
         'txtDef
         '
-        Me.txtDef.Location = New System.Drawing.Point(92, 224)
+        Me.txtDef.Location = New System.Drawing.Point(84, 224)
         Me.txtDef.Name = "txtDef"
         Me.txtDef.ReadOnly = True
         Me.txtDef.Size = New System.Drawing.Size(36, 20)
@@ -140,11 +142,31 @@ Partial Class Aukera
         Me.btnPlay.UseVisualStyleBackColor = True
         Me.btnPlay.Visible = False
         '
-        'Form2
+        'btnPersonaje2
+        '
+        Me.btnPersonaje2.Location = New System.Drawing.Point(104, 12)
+        Me.btnPersonaje2.Name = "btnPersonaje2"
+        Me.btnPersonaje2.Size = New System.Drawing.Size(75, 136)
+        Me.btnPersonaje2.TabIndex = 11
+        Me.btnPersonaje2.Text = "Personaje 2"
+        Me.btnPersonaje2.UseVisualStyleBackColor = True
+        '
+        'btnPersonaje3
+        '
+        Me.btnPersonaje3.Location = New System.Drawing.Point(197, 12)
+        Me.btnPersonaje3.Name = "btnPersonaje3"
+        Me.btnPersonaje3.Size = New System.Drawing.Size(75, 136)
+        Me.btnPersonaje3.TabIndex = 12
+        Me.btnPersonaje3.Text = "Personaje 3"
+        Me.btnPersonaje3.UseVisualStyleBackColor = True
+        '
+        'Aukera
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 298)
+        Me.Controls.Add(Me.btnPersonaje3)
+        Me.Controls.Add(Me.btnPersonaje2)
         Me.Controls.Add(Me.btnPlay)
         Me.Controls.Add(Me.txtMov)
         Me.Controls.Add(Me.txtAtk)
@@ -156,7 +178,7 @@ Partial Class Aukera
         Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.lblAtk)
         Me.Controls.Add(Me.btnPersonaje)
-        Me.Name = "Form2"
+        Me.Name = "Aukera"
         Me.Text = "Form2"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -173,4 +195,6 @@ Partial Class Aukera
     Friend WithEvents txtAtk As System.Windows.Forms.TextBox
     Friend WithEvents txtMov As System.Windows.Forms.TextBox
     Friend WithEvents btnPlay As System.Windows.Forms.Button
+    Friend WithEvents btnPersonaje2 As System.Windows.Forms.Button
+    Friend WithEvents btnPersonaje3 As System.Windows.Forms.Button
 End Class

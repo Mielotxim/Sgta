@@ -5,7 +5,7 @@
     Private atk As Integer
     Private def As Integer
     Private mov As Integer
-
+    Private arm As New Armada
     Public Sub New(ByVal iz As String, ByVal h As Integer, ByVal a As Integer, ByVal d As Integer, ByVal m As Integer)
         izena = iz
         hp = h
@@ -32,6 +32,10 @@
 
     Public Function getMov() As Integer
         Return mov
+    End Function
+
+    Public Function getArmada() As Armada
+        Return arm
     End Function
 
 End Class

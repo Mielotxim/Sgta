@@ -1,0 +1,17 @@
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\TableroImagenes\bin\Debug\TableroImagenes.exe.config
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\TableroImagenes\bin\Debug\TableroImagenes.exe
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\TableroImagenes\bin\Debug\TableroImagenes.pdb
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\TableroImagenes\bin\Debug\TableroImagenes.xml
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\TableroImagenes\bin\Debug\sgta.jokoa.exe
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\TableroImagenes\bin\Debug\sgta.logika.dll
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\TableroImagenes\bin\Debug\sgta.jokoa.pdb
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\TableroImagenes\bin\Debug\sgta.jokoa.xml
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\TableroImagenes\bin\Debug\sgta.logika.pdb
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\TableroImagenes\bin\Debug\sgta.logika.xml
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\TableroImagenes\obj\Debug\TableroImagenes.vbprojResolveAssemblyReference.cache
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\TableroImagenes\obj\Debug\TableroImagenes.Form1.resources
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\TableroImagenes\obj\Debug\TableroImagenes.Resources.resources
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\TableroImagenes\obj\Debug\TableroImagenes.vbproj.GenerateResource.Cache
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\TableroImagenes\obj\Debug\TableroImagenes.exe
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\TableroImagenes\obj\Debug\TableroImagenes.xml
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\TableroImagenes\obj\Debug\TableroImagenes.pdb

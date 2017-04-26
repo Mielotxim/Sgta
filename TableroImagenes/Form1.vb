@@ -31,6 +31,10 @@
     Private Sub OnbClick(ByVal sender As Object, ByVal e As MouseEventArgs)
         sender.BackgroundImage = TableroImagenes.My.Resources.water
         Label1.Text = sender.name
+        Dim a As Integer
+        a = sender.name
+        aux(a, a).BackgroundImage = TableroImagenes.My.Resources.water
+        aux((a-1), a).BackgroundImage = TableroImagenes.My.Resources.water
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

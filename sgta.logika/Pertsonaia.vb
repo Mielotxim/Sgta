@@ -13,7 +13,12 @@
         def = d
         mov = m
     End Sub
-
+    Public Sub setDf(ByVal d As Integer)
+        def = d
+    End Sub
+    Public Sub setAtk(ByVal a As Integer)
+        atk = a
+    End Sub
     Public Function getIzena() As String
         Return izena
     End Function

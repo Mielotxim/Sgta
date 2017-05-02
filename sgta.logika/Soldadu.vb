@@ -1,5 +1,6 @@
 ﻿Public Class Soldadu
     Private hp As Integer
+    Private def As Integer
     Private atk As Integer
     Private mov As Integer
     Private mota As String
@@ -12,4 +13,21 @@
         alk = al
         mov = m
     End Sub
+
+    Public Function getAtk() As Integer
+        Return atk
+    End Function
+
+    Public Function getDef() As Integer
+        Return def
+    End Function
+
+    Public Sub setAtk(ByVal a As Integer)
+        atk = a
+    End Sub
+
+    Public Sub setDef(ByVal d As Integer)
+        def = d
+    End Sub
+
 End Class

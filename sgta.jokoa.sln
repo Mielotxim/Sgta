@@ -7,6 +7,10 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "sgta.logika", "sgta.logika\
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TableroImagenes", "TableroImagenes\TableroImagenes.vbproj", "{CEB4F08C-2431-4553-BB81-41A66E733E86}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "sgta.db", "sgta.db\sgta.db.vbproj", "{0E12B8CF-8C90-481A-83A7-E441DAC83012}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "dbConnProbatu", "dbConnProbatu\dbConnProbatu.vbproj", "{47AE1DA2-DEF6-4C9A-861A-BEE2FE4EA060}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,14 @@ Global
 		{CEB4F08C-2431-4553-BB81-41A66E733E86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEB4F08C-2431-4553-BB81-41A66E733E86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEB4F08C-2431-4553-BB81-41A66E733E86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E12B8CF-8C90-481A-83A7-E441DAC83012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E12B8CF-8C90-481A-83A7-E441DAC83012}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E12B8CF-8C90-481A-83A7-E441DAC83012}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E12B8CF-8C90-481A-83A7-E441DAC83012}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47AE1DA2-DEF6-4C9A-861A-BEE2FE4EA060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47AE1DA2-DEF6-4C9A-861A-BEE2FE4EA060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47AE1DA2-DEF6-4C9A-861A-BEE2FE4EA060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47AE1DA2-DEF6-4C9A-861A-BEE2FE4EA060}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

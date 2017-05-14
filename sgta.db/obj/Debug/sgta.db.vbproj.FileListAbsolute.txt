@@ -1,0 +1,8 @@
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\bin\Debug\sgta.db.dll
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\bin\Debug\sgta.db.pdb
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\bin\Debug\sgta.db.xml
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\obj\Debug\sgta.db.Resources.resources
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\obj\Debug\sgta.db.vbproj.GenerateResource.Cache
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\obj\Debug\sgta.db.dll
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\obj\Debug\sgta.db.xml
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\obj\Debug\sgta.db.pdb

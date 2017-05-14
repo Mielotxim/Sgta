@@ -35,6 +35,7 @@ Partial Class Aukera
         Me.btnPlay = New System.Windows.Forms.Button()
         Me.btnPersonaje2 = New System.Windows.Forms.Button()
         Me.btnPersonaje3 = New System.Windows.Forms.Button()
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.SuspendLayout()
         '
         'btnPersonaje
@@ -197,4 +198,5 @@ Partial Class Aukera
     Friend WithEvents btnPlay As System.Windows.Forms.Button
     Friend WithEvents btnPersonaje2 As System.Windows.Forms.Button
     Friend WithEvents btnPersonaje3 As System.Windows.Forms.Button
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
 End Class

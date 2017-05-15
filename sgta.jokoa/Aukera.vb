@@ -17,7 +17,6 @@ Public Class Aukera
         Label5.Text = per(0).getHp
         Label4.Text = per(0).getAtk
         Label2.Text = per(0).getDef
-
     End Sub
 
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
@@ -40,5 +39,13 @@ Public Class Aukera
         form = New Tablero
         form.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+        Label7.BringToFront()
+        Label7.Text = "Shinzō Abe"
+        Label7.Visible = True
+        Threading.Thread.Sleep(500)
+        Label7.Visible = False
     End Sub
 End Class

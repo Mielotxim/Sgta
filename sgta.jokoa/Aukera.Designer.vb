@@ -22,181 +22,212 @@ Partial Class Aukera
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnPersonaje = New System.Windows.Forms.Button()
-        Me.lblAtk = New System.Windows.Forms.Label()
-        Me.txtName = New System.Windows.Forms.TextBox()
-        Me.lblHp = New System.Windows.Forms.Label()
-        Me.lblDef = New System.Windows.Forms.Label()
-        Me.lblMov = New System.Windows.Forms.Label()
-        Me.txtHp = New System.Windows.Forms.TextBox()
-        Me.txtDef = New System.Windows.Forms.TextBox()
-        Me.txtAtk = New System.Windows.Forms.TextBox()
-        Me.txtMov = New System.Windows.Forms.TextBox()
-        Me.btnPlay = New System.Windows.Forms.Button()
-        Me.btnPersonaje2 = New System.Windows.Forms.Button()
-        Me.btnPersonaje3 = New System.Windows.Forms.Button()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Aukera))
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'btnPersonaje
+        'Button1
         '
-        Me.btnPersonaje.Location = New System.Drawing.Point(13, 12)
-        Me.btnPersonaje.Name = "btnPersonaje"
-        Me.btnPersonaje.Size = New System.Drawing.Size(75, 136)
-        Me.btnPersonaje.TabIndex = 0
-        Me.btnPersonaje.Text = "Personaje"
-        Me.btnPersonaje.UseVisualStyleBackColor = True
+        Me.Button1.BackColor = System.Drawing.Color.Green
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.Location = New System.Drawing.Point(391, 378)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(97, 71)
+        Me.Button1.TabIndex = 0
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = False
         '
-        'lblAtk
+        'PictureBox1
         '
-        Me.lblAtk.AutoSize = True
-        Me.lblAtk.Location = New System.Drawing.Point(150, 194)
-        Me.lblAtk.Name = "lblAtk"
-        Me.lblAtk.Size = New System.Drawing.Size(26, 13)
-        Me.lblAtk.TabIndex = 1
-        Me.lblAtk.Text = "Atk:"
-        Me.lblAtk.Visible = False
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Location = New System.Drawing.Point(47, 217)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(98, 119)
+        Me.PictureBox1.TabIndex = 2
+        Me.PictureBox1.TabStop = False
         '
-        'txtName
+        'PictureBox2
         '
-        Me.txtName.Location = New System.Drawing.Point(79, 154)
-        Me.txtName.Name = "txtName"
-        Me.txtName.ReadOnly = True
-        Me.txtName.Size = New System.Drawing.Size(130, 20)
-        Me.txtName.TabIndex = 2
-        Me.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.txtName.Visible = False
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Location = New System.Drawing.Point(240, 217)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(98, 119)
+        Me.PictureBox2.TabIndex = 3
+        Me.PictureBox2.TabStop = False
         '
-        'lblHp
+        'PictureBox3
         '
-        Me.lblHp.AutoSize = True
-        Me.lblHp.Location = New System.Drawing.Point(51, 194)
-        Me.lblHp.Name = "lblHp"
-        Me.lblHp.Size = New System.Drawing.Size(24, 13)
-        Me.lblHp.TabIndex = 3
-        Me.lblHp.Text = "Hp:"
-        Me.lblHp.Visible = False
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Location = New System.Drawing.Point(335, 217)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(98, 119)
+        Me.PictureBox3.TabIndex = 4
+        Me.PictureBox3.TabStop = False
         '
-        'lblDef
+        'PictureBox4
         '
-        Me.lblDef.AutoSize = True
-        Me.lblDef.Location = New System.Drawing.Point(51, 227)
-        Me.lblDef.Name = "lblDef"
-        Me.lblDef.Size = New System.Drawing.Size(27, 13)
-        Me.lblDef.TabIndex = 4
-        Me.lblDef.Text = "Def:"
-        Me.lblDef.Visible = False
+        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox4.Location = New System.Drawing.Point(335, 97)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(98, 122)
+        Me.PictureBox4.TabIndex = 5
+        Me.PictureBox4.TabStop = False
         '
-        'lblMov
+        'PictureBox5
         '
-        Me.lblMov.AutoSize = True
-        Me.lblMov.Location = New System.Drawing.Point(145, 227)
-        Me.lblMov.Name = "lblMov"
-        Me.lblMov.Size = New System.Drawing.Size(31, 13)
-        Me.lblMov.TabIndex = 5
-        Me.lblMov.Text = "Mov:"
-        Me.lblMov.Visible = False
+        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox5.Location = New System.Drawing.Point(47, 97)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(98, 122)
+        Me.PictureBox5.TabIndex = 6
+        Me.PictureBox5.TabStop = False
         '
-        'txtHp
+        'PictureBox6
         '
-        Me.txtHp.Location = New System.Drawing.Point(84, 191)
-        Me.txtHp.Name = "txtHp"
-        Me.txtHp.ReadOnly = True
-        Me.txtHp.Size = New System.Drawing.Size(36, 20)
-        Me.txtHp.TabIndex = 6
-        Me.txtHp.Visible = False
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.Location = New System.Drawing.Point(240, 97)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(98, 122)
+        Me.PictureBox6.TabIndex = 7
+        Me.PictureBox6.TabStop = False
         '
-        'txtDef
+        'PictureBox7
         '
-        Me.txtDef.Location = New System.Drawing.Point(84, 224)
-        Me.txtDef.Name = "txtDef"
-        Me.txtDef.ReadOnly = True
-        Me.txtDef.Size = New System.Drawing.Size(36, 20)
-        Me.txtDef.TabIndex = 7
-        Me.txtDef.Visible = False
+        Me.PictureBox7.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox7.Location = New System.Drawing.Point(142, 97)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(102, 122)
+        Me.PictureBox7.TabIndex = 8
+        Me.PictureBox7.TabStop = False
         '
-        'txtAtk
+        'Label1
         '
-        Me.txtAtk.Location = New System.Drawing.Point(182, 191)
-        Me.txtAtk.Name = "txtAtk"
-        Me.txtAtk.ReadOnly = True
-        Me.txtAtk.Size = New System.Drawing.Size(36, 20)
-        Me.txtAtk.TabIndex = 8
-        Me.txtAtk.Visible = False
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Location = New System.Drawing.Point(47, 378)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(25, 13)
+        Me.Label1.TabIndex = 9
+        Me.Label1.Text = "HP:"
         '
-        'txtMov
+        'Label2
         '
-        Me.txtMov.Location = New System.Drawing.Point(182, 224)
-        Me.txtMov.Name = "txtMov"
-        Me.txtMov.ReadOnly = True
-        Me.txtMov.Size = New System.Drawing.Size(36, 20)
-        Me.txtMov.TabIndex = 9
-        Me.txtMov.Visible = False
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Location = New System.Drawing.Point(262, 378)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(39, 13)
+        Me.Label2.TabIndex = 10
+        Me.Label2.Text = "Label2"
         '
-        'btnPlay
+        'Label3
         '
-        Me.btnPlay.Location = New System.Drawing.Point(104, 263)
-        Me.btnPlay.Name = "btnPlay"
-        Me.btnPlay.Size = New System.Drawing.Size(75, 23)
-        Me.btnPlay.TabIndex = 10
-        Me.btnPlay.Text = "Jokatu"
-        Me.btnPlay.UseVisualStyleBackColor = True
-        Me.btnPlay.Visible = False
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Location = New System.Drawing.Point(205, 378)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(31, 13)
+        Me.Label3.TabIndex = 11
+        Me.Label3.Text = "DEF:"
         '
-        'btnPersonaje2
+        'Label4
         '
-        Me.btnPersonaje2.Location = New System.Drawing.Point(104, 12)
-        Me.btnPersonaje2.Name = "btnPersonaje2"
-        Me.btnPersonaje2.Size = New System.Drawing.Size(75, 136)
-        Me.btnPersonaje2.TabIndex = 11
-        Me.btnPersonaje2.Text = "Personaje 2"
-        Me.btnPersonaje2.UseVisualStyleBackColor = True
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Location = New System.Drawing.Point(106, 407)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(39, 13)
+        Me.Label4.TabIndex = 12
+        Me.Label4.Text = "Label4"
         '
-        'btnPersonaje3
+        'Label5
         '
-        Me.btnPersonaje3.Location = New System.Drawing.Point(197, 12)
-        Me.btnPersonaje3.Name = "btnPersonaje3"
-        Me.btnPersonaje3.Size = New System.Drawing.Size(75, 136)
-        Me.btnPersonaje3.TabIndex = 12
-        Me.btnPersonaje3.Text = "Personaje 3"
-        Me.btnPersonaje3.UseVisualStyleBackColor = True
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Location = New System.Drawing.Point(106, 378)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(39, 13)
+        Me.Label5.TabIndex = 13
+        Me.Label5.Text = "Label5"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Location = New System.Drawing.Point(47, 407)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(31, 13)
+        Me.Label6.TabIndex = 14
+        Me.Label6.Text = "ATK:"
         '
         'Aukera
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 298)
-        Me.Controls.Add(Me.btnPersonaje3)
-        Me.Controls.Add(Me.btnPersonaje2)
-        Me.Controls.Add(Me.btnPlay)
-        Me.Controls.Add(Me.txtMov)
-        Me.Controls.Add(Me.txtAtk)
-        Me.Controls.Add(Me.txtDef)
-        Me.Controls.Add(Me.txtHp)
-        Me.Controls.Add(Me.lblMov)
-        Me.Controls.Add(Me.lblDef)
-        Me.Controls.Add(Me.lblHp)
-        Me.Controls.Add(Me.txtName)
-        Me.Controls.Add(Me.lblAtk)
-        Me.Controls.Add(Me.btnPersonaje)
+        Me.BackgroundImage = Global.sgta.jokoa.My.Resources.Resources.select_character
+        Me.ClientSize = New System.Drawing.Size(500, 461)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.PictureBox7)
+        Me.Controls.Add(Me.PictureBox6)
+        Me.Controls.Add(Me.PictureBox5)
+        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Button1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Aukera"
-        Me.Text = "Form2"
+        Me.Text = "Champ Select"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents btnPersonaje As System.Windows.Forms.Button
-    Friend WithEvents lblAtk As System.Windows.Forms.Label
-    Friend WithEvents txtName As System.Windows.Forms.TextBox
-    Friend WithEvents lblHp As System.Windows.Forms.Label
-    Friend WithEvents lblDef As System.Windows.Forms.Label
-    Friend WithEvents lblMov As System.Windows.Forms.Label
-    Friend WithEvents txtHp As System.Windows.Forms.TextBox
-    Friend WithEvents txtDef As System.Windows.Forms.TextBox
-    Friend WithEvents txtAtk As System.Windows.Forms.TextBox
-    Friend WithEvents txtMov As System.Windows.Forms.TextBox
-    Friend WithEvents btnPlay As System.Windows.Forms.Button
-    Friend WithEvents btnPersonaje2 As System.Windows.Forms.Button
-    Friend WithEvents btnPersonaje3 As System.Windows.Forms.Button
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
 End Class

@@ -35,6 +35,10 @@ sgta.jokoa
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
+</member><member name="P:sgta.jokoa.My.Resources.Resources.select_character">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
 </member><member name="P:sgta.jokoa.My.Resources.Resources.Siria_Background">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.

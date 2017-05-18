@@ -14,3 +14,4 @@ C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\dbConnProbatu\obj
 C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta-jokoa\dbConnProbatu\bin\Debug\dbConnProbatu.exe.config
 C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta-jokoa\dbConnProbatu\obj\Debug\dbConnProbatu.xml
 C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta-jokoa\dbConnProbatu\obj\Debug\dbConnProbatu.pdb
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\dbConnProbatu\bin\Debug\MySql.Data.dll

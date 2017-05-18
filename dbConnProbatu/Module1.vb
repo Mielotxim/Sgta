@@ -1,5 +1,5 @@
 ﻿Imports sgta.db
-Imports System.Data.SqlClient
+Imports MySql.Data.MySqlClient
 
 Module Module1
 
@@ -7,9 +7,11 @@ Module Module1
         Console.WriteLine("konexioa zabaltzen....")
         datuBasea.Konektatu()
         Console.WriteLine("konexioa zabalduta")
-        Dim pertsonaia As SqlDataReader = datuBasea.PertsonaiakLortu()
+        Dim pertsonaia As MySqlDataReader = datuBasea.PertsonaiakLortu()
         pertsonaia.Read()
-        Console.WriteLine(pertsonaia.Item(1).ToString)
+        Console.WriteLine(pertsonaia.Item(0).ToString)
+        Console.WriteLine("sakatu enter jarraitzeko")
+        Console.ReadLine()
         pertsonaia.Close()
         datuBasea.ItxiKonexioa()
     End Sub

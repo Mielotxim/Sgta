@@ -63,3 +63,4 @@ C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta-jokoa\sgta.jokoa\o
 C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta-jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.Resources.resources
 C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta-jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.Tablero.resources
 C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta-jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.vbproj.GenerateResource.Cache
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\bin\Debug\MySql.Data.dll

@@ -1,18 +1,18 @@
-﻿Imports System.Data.SqlClient
+﻿Imports MySql.Data.MySqlClient
 
 Public Class datuBasea
 
-    Private Shared conn As SqlConnection
+    Private Shared conn As MySqlConnection
 
     Private Sub New()
     End Sub
 
     Public Shared Sub Konektatu()
         Dim strcon As String =
-            "Server=127.0.0.1;Database=sgtaforce;Integrated Security=False;Uid=root;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False"
+            "Server=127.0.0.1;DataBase=sgtaforce;uid=root;pwd="
         Console.WriteLine(strcon)
         Try
-            conn = New SqlConnection(strcon)
+            conn = New MySqlConnection(strcon)
             Console.WriteLine("konektatzen...")
             conn.Open()
             Console.WriteLine("konektatuta")
@@ -27,10 +27,10 @@ Public Class datuBasea
         conn.Close()
     End Sub
 
-    Public Shared Function PertsonaiakLortu() As SqlDataReader
-        Dim cmdPertsonaiak As SqlCommand
+    Public Shared Function PertsonaiakLortu() As MySqlDataReader
+        Dim cmdPertsonaiak As MySqlCommand
         Dim strSQL = "SELECT * FROM Pertsonaia"
-        cmdPertsonaiak = New SqlCommand(strSQL, conn)
+        cmdPertsonaiak = New MySqlCommand(strSQL, conn)
         Return (cmdPertsonaiak.ExecuteReader())
     End Function
 End Class

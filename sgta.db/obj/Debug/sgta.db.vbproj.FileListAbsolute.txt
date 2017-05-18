@@ -6,3 +6,4 @@ C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\obj\Debug
 C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\obj\Debug\sgta.db.dll
 C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\obj\Debug\sgta.db.xml
 C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\obj\Debug\sgta.db.pdb
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\bin\Debug\MySql.Data.dll

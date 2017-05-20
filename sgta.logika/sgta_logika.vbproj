@@ -64,7 +64,8 @@
   <ItemGroup>
     <Compile Include="Armada.vb" />
     <Compile Include="Jokalari.vb" />
-    <Compile Include="Jokoa.vb" />
+    <Compile Include="JokalariZerrenda.vb" />
+    <Compile Include="Sistema.vb" />
     <Compile Include="Kasilla.vb" />
     <Compile Include="Pertsonaia.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -85,6 +86,7 @@
     <Compile Include="Soldadu.vb" />
     <Compile Include="SoldaduFactory.vb" />
     <Compile Include="Tablero.vb" />
+    <Compile Include="TableroFactory.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

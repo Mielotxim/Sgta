@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "sgta.jokoa", "sgta.jokoa\sgta.jokoa.vbproj", "{2ADC5DC8-E6E0-4FDC-8B85-89DD551D0B5C}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "sgta_jokoa", "sgta.jokoa\sgta_jokoa.vbproj", "{2ADC5DC8-E6E0-4FDC-8B85-89DD551D0B5C}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "sgta.logika", "sgta.logika\sgta.logika.vbproj", "{3AA97D7C-40DC-4285-ACE2-37053C8F1E29}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "sgta_logika", "sgta.logika\sgta_logika.vbproj", "{3AA97D7C-40DC-4285-ACE2-37053C8F1E29}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TableroImagenes", "TableroImagenes\TableroImagenes.vbproj", "{CEB4F08C-2431-4553-BB81-41A66E733E86}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "sgta.db", "sgta.db\sgta.db.vbproj", "{0E12B8CF-8C90-481A-83A7-E441DAC83012}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "sgta_db", "sgta.db\sgta_db.vbproj", "{0E12B8CF-8C90-481A-83A7-E441DAC83012}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "dbConnProbatu", "dbConnProbatu\dbConnProbatu.vbproj", "{47AE1DA2-DEF6-4C9A-861A-BEE2FE4EA060}"
 EndProject

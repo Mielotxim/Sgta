@@ -1,0 +1,8 @@
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.logika\bin\Debug\sgta.logika.dll
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.logika\bin\Debug\sgta.logika.pdb
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.logika\bin\Debug\sgta.logika.xml
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.logika\obj\Debug\sgta.logika.Resources.resources
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.logika\obj\Debug\sgta_logika.vbproj.GenerateResource.Cache
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.logika\obj\Debug\sgta.logika.dll
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.logika\obj\Debug\sgta.logika.xml
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.logika\obj\Debug\sgta.logika.pdb

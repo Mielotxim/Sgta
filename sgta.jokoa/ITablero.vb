@@ -1,4 +1,7 @@
-﻿Public Class Tablero
+﻿Imports sgta.logika
+
+Public Class ITablero
+    'Dim aux(Sistema.getTable().getAltuera, Sistema.getTable().getZabalera) As PictureBox
     Dim aux(100, 100) As PictureBox
     Private Sub Tablero_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         For altuera As Integer = 1 To 10

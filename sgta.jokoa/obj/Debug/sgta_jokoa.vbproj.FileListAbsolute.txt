@@ -1,0 +1,9 @@
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta_jokoa.vbprojResolveAssemblyReference.cache
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.Menu.resources
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.Aukera.resources
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.Resources.resources
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.Tablero.resources
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta_jokoa.vbproj.GenerateResource.Cache
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.exe
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.xml
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.pdb

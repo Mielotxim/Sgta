@@ -1,13 +1,11 @@
 ﻿Public Class Pertsonaia
     'AT'
-    Private izena As String
     Private hp As Integer
-    Private atk As Integer
     Private def As Integer
+    Private atk As Integer
     Private mov As Integer
-    Private arm As New Armada
-    Public Sub New(ByVal iz As String, ByVal h As Integer, ByVal a As Integer, ByVal d As Integer, ByVal m As Integer)
-        izena = iz
+    Private alk As Integer
+    Public Sub New(ByVal h As Integer, ByVal a As Integer, ByVal d As Integer, ByVal m As Integer)
         hp = h
         atk = a
         def = d

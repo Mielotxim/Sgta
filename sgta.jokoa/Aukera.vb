@@ -35,8 +35,8 @@ Public Class Aukera
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim form As Tablero
-        form = New Tablero
+        Dim form As ITablero
+        form = New ITablero
         form.Show()
         Me.Hide()
     End Sub

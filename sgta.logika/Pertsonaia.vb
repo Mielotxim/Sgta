@@ -1,4 +1,4 @@
-﻿Public Class Pertsonaia
+﻿Public MustInherit Class Pertsonaia
     'AT'
     Private hp As Integer
     Private def As Integer
@@ -11,15 +11,14 @@
         def = d
         mov = m
     End Sub
+
+    'cambiar los set por un atkGehitu()???
     Public Sub setDf(ByVal d As Integer)
         def = d
     End Sub
     Public Sub setAtk(ByVal a As Integer)
         atk = a
     End Sub
-    Public Function getIzena() As String
-        Return izena
-    End Function
 
     Public Function getHp() As Integer
         Return hp
@@ -37,8 +36,11 @@
         Return mov
     End Function
 
-    Public Function getArmada() As Armada
-        Return arm
-    End Function
+    Public Sub erasoaJaso(ByVal atkR As Integer)
+        'formula provisional
+        'hace falta testear el daño para hacerlo justo
+        Dim var As Integer = (Math.Floor((100 - 75 + 1) * Rnd()) + 50) / 100
+        hp -= (var * (25 * atkR / (def * 1.4)))
+    End Sub
 
 End Class

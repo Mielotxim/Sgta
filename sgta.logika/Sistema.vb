@@ -4,6 +4,7 @@
     Private Shared jokalari As JokalariZerrenda
     Private Shared txanda As Integer
     Private Shared txandaKop As Integer
+    Private Shared bukatu As Boolean
 
     'Eraikizailea
     Private Sub New()
@@ -14,8 +15,11 @@
         tablero = TableroFactory.tableroaSortu(mota)
         tablero.bete()
         jokalari = j
-        txandaKop = 1
+        tablero.jokalariakSartu(jokalari)
+        txandaKop = 0
         txandaAldatu()
+        bukatu = False
+        'jokatu()
     End Sub
 
     Public Shared Sub txandaAldatu()
@@ -26,5 +30,14 @@
     Public Shared Function getTable() As Tablero
         Return tablero
     End Function
+
+    Public Shared Function getJokalariAktibo() As Jokalari
+        Return jokalari.getJokalari(txanda)
+    End Function
+
+    Public Shared Sub jokoaBukatu()
+        'insertar aqui avisos para la interfaz de ser necesario
+        bukatu = True
+    End Sub
 
 End Class

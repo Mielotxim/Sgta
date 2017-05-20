@@ -4,7 +4,7 @@
     End Sub
 
     Public Shared Function tableroaSortu(ByVal mota As String) As Tablero
-        Dim t As Tablero
+        Dim t As Tablero = Nothing
         'medidas temporales
         Select Case mota
             Case "Erraza"

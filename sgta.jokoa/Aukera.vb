@@ -5,14 +5,14 @@ Public Class Aukera
     Dim per(8) As Pertsonaia
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        per(0) = New Pertsonaia("Shinzō Abe", 100, 10, 10, 2)
-        per(1) = New Pertsonaia("Kim Yong Un", 100, 10, 10, 2)
-        per(2) = New Pertsonaia("Xi Jinping", 100, 10, 10, 2)
-        per(3) = New Pertsonaia("Hilary Clinton", 100, 10, 10, 2)
-        per(4) = New Pertsonaia("Donald Trump", 100, 10, 10, 2)
-        per(5) = New Pertsonaia("chino cudeiro", 100, 10, 10, 2)
-        per(6) = New Pertsonaia("Vladimir Putin", 100, 10, 10, 2)
-        per(7) = New Pertsonaia("chino cudeiro", 100, 10, 10, 2)
+        per(0) = New Jokalari("Shinzō Abe", 100, 10, 10, 2)
+        per(1) = New Jokalari("Kim Yong Un", 100, 10, 10, 2)
+        per(2) = New Jokalari("Xi Jinping", 100, 10, 10, 2)
+        per(3) = New Jokalari("Hilary Clinton", 100, 10, 10, 2)
+        per(4) = New Jokalari("Donald Trump", 100, 10, 10, 2)
+        per(5) = New Jokalari("chino cudeiro", 100, 10, 10, 2)
+        per(6) = New Jokalari("Vladimir Putin", 100, 10, 10, 2)
+        per(7) = New Jokalari("chino cudeiro", 100, 10, 10, 2)
 
         Label5.Text = per(0).getHp
         Label4.Text = per(0).getAtk

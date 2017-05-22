@@ -43,4 +43,10 @@
         hp -= (var * (25 * atkR / (def * 1.4)))
     End Sub
 
+    Public MustOverride Function ekintzaEginDezake() As Boolean
+
+    Public Function erasoaHeltzenDa(ByRef KasillaS As Kasilla, ByRef kasillaI As Kasilla) As Boolean
+        
+    End Function
+
 End Class

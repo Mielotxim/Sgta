@@ -22,4 +22,17 @@
     Public Function getArmada() As Armada
         Return arm
     End Function
+
+    Public Function nireSoldaduaDa(ByRef soldadu As Soldadu) As Boolean
+        Return arm.soldaduaDu(soldadu)
+    End Function
+
+    Public Overrides Function ekintzaEginDezake() As Boolean
+        Return Me.Equals(Sistema.getJokalariAktibo())
+    End Function
+
+    Public Overloads Function Equals(ByRef jok As Jokalari) As Boolean
+        Return jok.izena.Equals(Me.izena)
+    End Function
+
 End Class

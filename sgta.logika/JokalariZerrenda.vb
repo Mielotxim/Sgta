@@ -23,6 +23,7 @@
     Public Function getJokalari(ByVal i As Integer) As Jokalari
         If i < jokaKop Then
             Return jokalari(i)
+        Else : Return Nothing
         End If
     End Function
 

@@ -24,4 +24,14 @@ Public Class Armada
             End If
         End While
     End Sub
+
+    Function soldaduaDu(soldadu As Soldadu) As Boolean
+        For i = 0 To listaSoldadu.Length
+            If listaSoldadu(i).Equals(soldadu) Then
+                Return True
+            End If
+        Next
+        Return False
+    End Function
+
 End Class

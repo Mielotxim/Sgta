@@ -21,7 +21,6 @@ Public Class ITablero
                 End If
                 aux(altuera, zabalera) = b
                 Panel2.Controls.Add(b)
-
             Next
         Next
 

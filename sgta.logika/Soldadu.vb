@@ -8,4 +8,8 @@
         mota = m
     End Sub
 
+    Public Overrides Function ekintzaEginDezake() As Boolean
+        Return Sistema.getJokalariAktibo().nireSoldaduaDa(Me)
+    End Function
+
 End Class

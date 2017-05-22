@@ -2,9 +2,13 @@
     'AT
     Private per As Pertsonaia
     Private mota As String
+    Private alt As Integer
+    Private zab As Integer
 
     'Eraikitzailea
-    Public Sub New()
+    Public Sub New(ByVal a As Integer, ByVal z As Integer)
+        alt = a
+        zab = z
     End Sub
 
     'Metodoak

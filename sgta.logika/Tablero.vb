@@ -23,7 +23,7 @@
         For altuera = 0 To getAltuera()
             For zabalera = 0 To getAltuera()
                 'falta poner tipos de casillas
-                nireTablero(altuera)(zabalera) = New Kasilla()
+                nireTablero(altuera)(zabalera) = New Kasilla(altuera, zabalera)
             Next
         Next
     End Sub
@@ -33,5 +33,9 @@
         nireTablero(getAltuera() / 2)(1).pertsonaiaSartu(jokalari.getJokalari(0))
         nireTablero(getAltuera() / 2)(getZabalera() - 1).pertsonaiaSartu(jokalari.getJokalari(1))
     End Sub
+
+    Function getKasilla(alt As Integer, zab As Integer) As Kasilla
+        Return nireTablero(alt)(zab)
+    End Function
 
 End Class

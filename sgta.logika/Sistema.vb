@@ -5,6 +5,7 @@
     Private Shared txanda As Integer
     Private Shared txandaKop As Integer
     Private Shared bukatu As Boolean
+    Private Shared currentK As Kasilla
 
     'Eraikizailea
     Private Sub New()
@@ -38,6 +39,10 @@
     Public Shared Sub jokoaBukatu()
         'insertar aqui avisos para la interfaz de ser necesario
         bukatu = True
+    End Sub
+
+    Public Shared Sub setCurrentK(ByVal alt As Integer, ByVal zab As Integer)
+        currentK = tablero.getKasilla(alt, zab)
     End Sub
 
 End Class

@@ -45,8 +45,34 @@
 
     Public MustOverride Function ekintzaEginDezake() As Boolean
 
-    Public Function erasoaHeltzenDa(ByRef KasillaS As Kasilla, ByRef kasillaI As Kasilla) As Boolean
-        
+    Public Function erasoaHeltzenDa(ByVal altS As Integer, ByVal zabS As Integer, ByVal altI As Integer, ByVal zabI As Integer) As Boolean
+        If (altI >= 0 And altI <= Sistema.getTable().getAltuera()) And (zabI >= 0 And zabI <= Sistema.getTable().getZabalera()) _
+        And Not (altS = altI And zabS = zabI) Then
+            Dim altAux As Integer = Math.Abs(altS - altI)
+            Dim zabAux As Integer = Math.Abs(zabS - zabI)
+            If (altAux + zabAux <= alk) Then
+                Return True
+            Else : Return False
+            End If
+        Else
+            'aqui habria que poner una excepcion
+            Return False
+        End If
+    End Function
+
+    Public Function mugimenduaHeltzenDa(ByVal altS As Integer, ByVal zabS As Integer, ByVal altI As Integer, ByVal zabI As Integer) As Boolean
+        If (altI >= 0 And altI <= Sistema.getTable().getAltuera()) And (zabI >= 0 And zabI <= Sistema.getTable().getZabalera()) _
+        And Not (altS = altI And zabS = zabI) Then
+            Dim altAux As Integer = Math.Abs(altS - altI)
+            Dim zabAux As Integer = Math.Abs(zabS - zabI)
+            If (altAux + zabAux <= mov) Then
+                Return True
+            Else : Return False
+            End If
+        Else
+            'aqui habria que poner una excepcion
+            Return False
+        End If
     End Function
 
 End Class

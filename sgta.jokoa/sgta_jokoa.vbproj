@@ -168,6 +168,30 @@
   <ItemGroup>
     <None Include="Resources\select character.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select character1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select character2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Japones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Koreano.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Putin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trump.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Putin1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

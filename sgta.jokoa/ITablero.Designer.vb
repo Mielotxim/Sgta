@@ -68,7 +68,7 @@ Partial Class ITablero
         Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Location = New System.Drawing.Point(-1, -14)
+        Me.Panel1.Location = New System.Drawing.Point(-1, -30)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(214, 612)
         Me.Panel1.TabIndex = 0

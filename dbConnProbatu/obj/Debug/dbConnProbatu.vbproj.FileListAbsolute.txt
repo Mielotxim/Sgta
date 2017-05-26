@@ -15,3 +15,17 @@ C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta-jokoa\dbConnProbat
 C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta-jokoa\dbConnProbatu\obj\Debug\dbConnProbatu.xml
 C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta-jokoa\dbConnProbatu\obj\Debug\dbConnProbatu.pdb
 C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\dbConnProbatu\bin\Debug\MySql.Data.dll
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\dbConnProbatu\bin\Debug\dbConnProbatu.exe.config
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\dbConnProbatu\bin\Debug\dbConnProbatu.exe
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\dbConnProbatu\bin\Debug\dbConnProbatu.pdb
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\dbConnProbatu\bin\Debug\dbConnProbatu.xml
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\dbConnProbatu\bin\Debug\MySql.Data.dll
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\dbConnProbatu\bin\Debug\sgta.db.dll
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\dbConnProbatu\bin\Debug\sgta.db.pdb
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\dbConnProbatu\bin\Debug\sgta.db.xml
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\dbConnProbatu\obj\Debug\dbConnProbatu.vbprojResolveAssemblyReference.cache
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\dbConnProbatu\obj\Debug\dbConnProbatu.Resources.resources
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\dbConnProbatu\obj\Debug\dbConnProbatu.vbproj.GenerateResource.Cache
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\dbConnProbatu\obj\Debug\dbConnProbatu.exe
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\dbConnProbatu\obj\Debug\dbConnProbatu.xml
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\dbConnProbatu\obj\Debug\dbConnProbatu.pdb

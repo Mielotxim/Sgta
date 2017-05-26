@@ -6,7 +6,7 @@
     Private Shared txandaKop As Integer
     Private Shared bukatu As Boolean
     Private Shared currentK As Kasilla
-
+    Private Shared fasea As String
     'Eraikizailea
     Private Sub New()
     End Sub
@@ -20,10 +20,10 @@
         txandaKop = 0
         txandaAldatu()
         bukatu = False
-        'jokatu()
     End Sub
 
     Public Shared Sub txandaAldatu()
+        fasea = "Hasierako Fasea"
         txanda = txandaKop Mod jokalari.getKop()
         txandaKop += 1
     End Sub
@@ -45,4 +45,7 @@
         currentK = tablero.getKasilla(alt, zab)
     End Sub
 
+    Public Shared Function getFase() As String
+        Return fasea
+    End Function
 End Class

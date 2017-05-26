@@ -15,6 +15,10 @@ sgta.jokoa
   Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
+</member><member name="P:sgta.jokoa.My.Resources.Resources.Chino">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
 </member><member name="P:sgta.jokoa.My.Resources.Resources.City_Background">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -31,11 +35,35 @@ sgta.jokoa
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
+</member><member name="P:sgta.jokoa.My.Resources.Resources.Japones">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:sgta.jokoa.My.Resources.Resources.Koreano">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
 </member><member name="P:sgta.jokoa.My.Resources.Resources.Plain_Background">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
+</member><member name="P:sgta.jokoa.My.Resources.Resources.Putin">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:sgta.jokoa.My.Resources.Resources.Putin1">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
 </member><member name="P:sgta.jokoa.My.Resources.Resources.select_character">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:sgta.jokoa.My.Resources.Resources.select_character1">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:sgta.jokoa.My.Resources.Resources.select_character2">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
@@ -44,6 +72,10 @@ sgta.jokoa
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member><member name="P:sgta.jokoa.My.Resources.Resources.Stalin">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:sgta.jokoa.My.Resources.Resources.Trump">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>

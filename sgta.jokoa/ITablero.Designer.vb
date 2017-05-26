@@ -329,16 +329,16 @@ Partial Class ITablero
         '
         'Panel2
         '
+        Me.Panel2.AutoScroll = True
         Me.Panel2.Location = New System.Drawing.Point(220, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1238, 592)
+        Me.Panel2.Size = New System.Drawing.Size(1019, 612)
         Me.Panel2.TabIndex = 1
         '
         'ITablero
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.AutoScroll = True
         Me.BackgroundImage = Global.sgta.jokoa.My.Resources.Resources.Plain_Background
         Me.ClientSize = New System.Drawing.Size(1239, 608)
         Me.Controls.Add(Me.Panel2)

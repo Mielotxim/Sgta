@@ -1,19 +1,25 @@
 ﻿Public Class JokalariZerrenda
     'AT
-    Private jokalari() As Jokalari
+    Private jokalari(2) As Jokalari
     Private jokaKop As Integer
 
     'Eraikitzailea
     Public Sub New()
         jokaKop = 0
+        Array.Resize(jokalari, 2)
     End Sub
 
     'Metodoak
-    Public Sub addJokalari(ByRef j As Jokalari)
-        If jokaKop < 2 Then
-            jokalari(jokaKop) = j
-            jokaKop += 1
-        End If
+    Public Sub addJokalari(ByVal j As Jokalari)
+        MsgBox(1)
+        '  If jokaKop < 2 Then
+        'MsgBox(2)
+        'jokalari(jokaKop) = j
+        'MsgBox(3)
+        'jokaKop += 1
+
+        'End If
+        jokalari(0) = j
     End Sub
 
     Public Function getKop() As Integer

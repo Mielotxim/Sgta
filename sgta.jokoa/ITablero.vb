@@ -4,6 +4,7 @@ Public Class ITablero
     'Dim taula(Sistema.getTable().getAltuera, Sistema.getTable().getZabalera) As PictureBox
     Dim taula(100, 100) As PictureBox
     Private Sub Tablero_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lblFase.Text = "Hasierako Fasea"
         For altuera As Integer = 1 To 20
             For zabalera As Integer = 1 To 20
                 Dim b As New PictureBox()
@@ -25,7 +26,7 @@ Public Class ITablero
         Next
 
         lblName.Text = "TU PERSONAJE"
-        
+
     End Sub
 
     Private Sub OnbClick(ByVal sender As Object, ByVal e As MouseEventArgs)
@@ -34,10 +35,6 @@ Public Class ITablero
         a = sender.name
         b = a.Split("/")
         taula(b(0), b(1)).BackgroundImage = sgta.jokoa.My.Resources.water
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        taula(10, 10).BackgroundImage = sgta.jokoa.My.Resources.water
     End Sub
 
     Private Sub setColorRed(ByVal altuera As Integer, ByVal zabalera As Integer, ByVal dis As Integer)
@@ -63,5 +60,17 @@ Public Class ITablero
             auxZ = 0
             auxA -= 1
         End While
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        lblFase.Text = "Mugimendu Fasea"
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        lblFase.Text = "Eraso Fasea"
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        lblFase.Text = "Hasierako Fasea"
     End Sub
 End Class

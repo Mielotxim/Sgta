@@ -39,6 +39,12 @@ Public Class Aukera
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim jokalariak As New JokalariZerrenda
+        Dim aux As Jokalari
+        aux = bilatuJokalaria()
+        MsgBox(aux.getIzena)
+        jokalariak.addJokalari(aux)
+        Sistema.jokoaHasi("Erraza", jokalariak)
         Dim form As ITablero
         form = New ITablero
         form.Show()
@@ -79,4 +85,22 @@ Public Class Aukera
         End If
     End Sub
 
+    Private Function bilatuJokalaria() As Jokalari
+        Dim aux As Jokalari
+        Dim bukatuta As Boolean
+        Dim i As Integer
+        i = 0
+        bukatuta = False
+        aux = Nothing
+        While Not bukatuta And i < per.Length
+            If per(i).getIzena = ComboBox1.SelectedItem.ToString Then
+                aux = per(i)
+                bukatuta = True
+            Else
+                i = i + 1
+            End If
+        End While
+        MsgBox(aux.getIzena)
+        Return aux
+    End Function
 End Class

@@ -1,0 +1,9 @@
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\bin\Debug\sgta.db.dll
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\bin\Debug\sgta.db.pdb
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\bin\Debug\sgta.db.xml
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\bin\Debug\MySql.Data.dll
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\obj\Debug\sgta.db.Resources.resources
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\obj\Debug\sgta_db.vbproj.GenerateResource.Cache
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\obj\Debug\sgta.db.dll
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\obj\Debug\sgta.db.xml
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\obj\Debug\sgta.db.pdb

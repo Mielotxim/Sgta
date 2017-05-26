@@ -39,4 +39,8 @@
         Return nireTablero(alt)(zab)
     End Function
 
+    Function pertsonairikDu(altuera As Integer, zabalera As Integer) As Boolean
+        Return nireTablero(altuera)(zabalera).pertsonaiaDu()
+    End Function
+
 End Class

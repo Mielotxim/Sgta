@@ -35,4 +35,8 @@
         per = p
     End Sub
 
+    Public Function pertsonaiaDu() As Boolean
+        Return Not IsNothing(per)
+    End Function
+
 End Class

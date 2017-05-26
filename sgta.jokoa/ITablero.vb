@@ -25,16 +25,39 @@ Public Class ITablero
             Next
         Next
 
+        lblTxanda.Text = Sistema.getJokalariAktibo().getIzena()
         lblName.Text = "TU PERSONAJE"
 
     End Sub
 
     Private Sub OnbClick(ByVal sender As Object, ByVal e As MouseEventArgs)
         Dim a As String
-        Dim b(2) As String
+        Dim b(1) As String
         a = sender.name
         b = a.Split("/")
         taula(b(0), b(1)).BackgroundImage = sgta.jokoa.My.Resources.water
+        'no se para que es el codigo anterior asi que lo dejo cuando no sirva lo borras y listo
+        'aqui empezamos ya con los turnos 
+        Select Case Sistema.getFase()
+            Case "Hasierako Fasea"
+                If Sistema.pertsonairikDu(b(0), b(1)) Then
+                    'aqui se pedirian los datos de la casilla para hacerlos visibles
+                End If
+            Case "Mugimendu Fasea"
+                If Sistema.currentDu() Then
+                    'aqui significa que el rombo esta a la vista y tocaria moverse
+                Else
+                    'aqui mirariamos si hay persona y despues dibujariamos el rombo
+                End If
+            Case "Eraso Fasea"
+                If Sistema.currentDu() Then
+                    'esta el robo de ataque mirariamos a ver si se puede atacar a la casilla indicada
+                Else
+                    'aqui mirariamos si hay persona y despues dibujariamos el rombo
+                End If
+            Case Else
+                MsgBox("Error en las fases")
+        End Select
     End Sub
 
     Private Sub setColorRed(ByVal altuera As Integer, ByVal zabalera As Integer, ByVal dis As Integer)
@@ -63,14 +86,20 @@ Public Class ITablero
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        lblFase.Text = "Mugimendu Fasea"
+        Dim fase As String = "Mugimendu Fasea"
+        lblFase.Text = fase
+        Sistema.faseAldatu(fase)
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        lblFase.Text = "Eraso Fasea"
+        Dim fase As String = "Eraso Fasea"
+        lblFase.Text = fase
+        Sistema.faseAldatu(fase)
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         lblFase.Text = "Hasierako Fasea"
+        Sistema.txandaAldatu()
+        lblTxanda.Text = Sistema.getJokalariAktibo().getIzena()
     End Sub
 End Class

@@ -7,6 +7,7 @@
     Private Shared bukatu As Boolean
     Private Shared currentK As Kasilla
     Private Shared fasea As String
+
     'Eraikizailea
     Private Sub New()
     End Sub
@@ -47,5 +48,17 @@
 
     Public Shared Function getFase() As String
         Return fasea
+    End Function
+
+    Public Shared Sub faseAldatu(ByVal fase As String)
+        fasea = fase
+    End Sub
+
+    Public Shared Function pertsonairikDu(ByVal altuera As Integer, ByVal zabalera As Integer) As Boolean
+        Return tablero.pertsonairikDu(altuera, zabalera)
+    End Function
+
+    Public Shared Function currentDu() As Boolean
+        Return Not IsNothing(currentK)
     End Function
 End Class

@@ -4,9 +4,9 @@
 
     'ERaikitzailea
     Public Sub New(ByVal altuera As Integer, ByVal zabalera As Integer)
-        Array.Resize(nireTablero, altuera)
+        ReDim nireTablero(altuera)
         For i = 0 To altuera
-            Array.Resize(nireTablero(i), zabalera)
+            ReDim nireTablero(i)(zabalera)
         Next
     End Sub
 
@@ -20,9 +20,10 @@
     End Function
 
     Public Sub bete()
-        For altuera = 0 To getAltuera()
-            For zabalera = 0 To getAltuera()
+        For altuera = 0 To getAltuera() - 1
+            For zabalera = 0 To getZabalera() - 1
                 'falta poner tipos de casillas
+
                 nireTablero(altuera)(zabalera) = New Kasilla(altuera, zabalera)
             Next
         Next

@@ -11,12 +11,11 @@
 
     'Metodoak
     Public Sub addJokalari(ByVal j As Jokalari)
-        MsgBox(1)
         '  If jokaKop < 2 Then
         'MsgBox(2)
         'jokalari(jokaKop) = j
         'MsgBox(3)
-        'jokaKop += 1
+        jokaKop += 1
 
         'End If
         jokalari(0) = j

@@ -29,7 +29,7 @@ Partial Class ITablero
         Me.Button5 = New System.Windows.Forms.Button()
         Me.lblFase = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.statPanel = New System.Windows.Forms.TableLayoutPanel()
         Me.lblName = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -50,7 +50,7 @@ Partial Class ITablero
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
-        Me.TableLayoutPanel1.SuspendLayout()
+        Me.statPanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -62,7 +62,7 @@ Partial Class ITablero
         Me.Panel1.Controls.Add(Me.Button5)
         Me.Panel1.Controls.Add(Me.lblFase)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.TableLayoutPanel1)
+        Me.Panel1.Controls.Add(Me.statPanel)
         Me.Panel1.Controls.Add(Me.btnCancel)
         Me.Panel1.Controls.Add(Me.Button3)
         Me.Panel1.Controls.Add(Me.Button2)
@@ -118,42 +118,42 @@ Partial Class ITablero
         Me.Label1.TabIndex = 8
         Me.Label1.Text = "FASE: "
         '
-        'TableLayoutPanel1
+        'statPanel
         '
-        Me.TableLayoutPanel1.ColumnCount = 4
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.85792!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.3224!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.49727!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.3224!))
-        Me.TableLayoutPanel1.Controls.Add(Me.lblName, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label2, 0, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label3, 0, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label4, 0, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.lblHp, 1, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.lblAtk, 1, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.lblMov, 1, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label8, 2, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label9, 2, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label10, 2, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.lblTeam, 3, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.lblDef, 3, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.lblAlk, 3, 3)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(14, 128)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 4
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(183, 161)
-        Me.TableLayoutPanel1.TabIndex = 7
-        Me.TableLayoutPanel1.Visible = False
+        Me.statPanel.ColumnCount = 4
+        Me.statPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.85792!))
+        Me.statPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.3224!))
+        Me.statPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.49727!))
+        Me.statPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.3224!))
+        Me.statPanel.Controls.Add(Me.lblName, 0, 0)
+        Me.statPanel.Controls.Add(Me.Label2, 0, 1)
+        Me.statPanel.Controls.Add(Me.Label3, 0, 2)
+        Me.statPanel.Controls.Add(Me.Label4, 0, 3)
+        Me.statPanel.Controls.Add(Me.lblHp, 1, 1)
+        Me.statPanel.Controls.Add(Me.lblAtk, 1, 2)
+        Me.statPanel.Controls.Add(Me.lblMov, 1, 3)
+        Me.statPanel.Controls.Add(Me.Label8, 2, 1)
+        Me.statPanel.Controls.Add(Me.Label9, 2, 2)
+        Me.statPanel.Controls.Add(Me.Label10, 2, 3)
+        Me.statPanel.Controls.Add(Me.lblTeam, 3, 1)
+        Me.statPanel.Controls.Add(Me.lblDef, 3, 2)
+        Me.statPanel.Controls.Add(Me.lblAlk, 3, 3)
+        Me.statPanel.Location = New System.Drawing.Point(14, 128)
+        Me.statPanel.Name = "statPanel"
+        Me.statPanel.RowCount = 4
+        Me.statPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.statPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.statPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.statPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.statPanel.Size = New System.Drawing.Size(183, 161)
+        Me.statPanel.TabIndex = 7
+        Me.statPanel.Visible = False
         '
         'lblName
         '
         Me.lblName.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblName.AutoSize = True
-        Me.TableLayoutPanel1.SetColumnSpan(Me.lblName, 4)
+        Me.statPanel.SetColumnSpan(Me.lblName, 4)
         Me.lblName.Location = New System.Drawing.Point(3, 13)
         Me.lblName.Name = "lblName"
         Me.lblName.Size = New System.Drawing.Size(45, 13)
@@ -348,8 +348,8 @@ Partial Class ITablero
         Me.Text = "Form1"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        Me.TableLayoutPanel1.ResumeLayout(False)
-        Me.TableLayoutPanel1.PerformLayout()
+        Me.statPanel.ResumeLayout(False)
+        Me.statPanel.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -361,7 +361,7 @@ Partial Class ITablero
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents TableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents statPanel As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents lblName As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label

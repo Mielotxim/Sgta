@@ -12,4 +12,8 @@
         Return Sistema.getJokalariAktibo().nireSoldaduaDa(Me)
     End Function
 
+    Public Function getMota() As String
+        Return mota
+    End Function
+
 End Class

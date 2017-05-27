@@ -7,3 +7,12 @@ C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\obj\
 C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\obj\Debug\sgta.db.dll
 C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\obj\Debug\sgta.db.xml
 C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\obj\Debug\sgta.db.pdb
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\bin\Debug\sgta.db.dll
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\bin\Debug\sgta.db.pdb
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\bin\Debug\sgta.db.xml
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\bin\Debug\MySql.Data.dll
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\obj\Debug\sgta.db.Resources.resources
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\obj\Debug\sgta_db.vbproj.GenerateResource.Cache
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\obj\Debug\sgta.db.dll
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\obj\Debug\sgta.db.xml
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.db\obj\Debug\sgta.db.pdb

@@ -1,6 +1,7 @@
 ﻿Public MustInherit Class Pertsonaia
     'AT'
     Private hp As Integer
+    Private taldea As String
     Private def As Integer
     Private atk As Integer
     Private mov As Integer
@@ -16,6 +17,11 @@
     Public Sub setDf(ByVal d As Integer)
         def = d
     End Sub
+
+    Public Function getTaldea() As String
+        Return taldea
+    End Function
+
     Public Sub setAtk(ByVal a As Integer)
         atk = a
     End Sub
@@ -34,6 +40,10 @@
 
     Public Function getMov() As Integer
         Return mov
+    End Function
+
+    Public Function getAlk() As Integer
+        Return alk
     End Function
 
     Public Sub erasoaJaso(ByVal atkR As Integer)

@@ -1,17 +1,17 @@
 ﻿Imports sgta.logika
 
 Public Class ITablero
-    'Dim taula(Sistema.getTable().getAltuera, Sistema.getTable().getZabalera) As PictureBox
-    Dim taula(100, 100) As PictureBox
+    Dim taula(Sistema.getTable().getAltuera - 1, Sistema.getTable().getZabalera - 1) As PictureBox
+    'Dim taula(100, 100) As PictureBox
     Private Sub Tablero_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblFase.Text = "Hasierako Fasea"
-        For altuera As Integer = 1 To 20
-            For zabalera As Integer = 1 To 20
+        For altuera As Integer = 0 To (Sistema.getTable().getAltuera - 1)
+            For zabalera As Integer = 0 To (Sistema.getTable().getZabalera - 1)
                 Dim b As New PictureBox()
                 b.Height = 40
                 b.Width = 40
-                b.Left = 40 * zabalera
-                b.Top = 40 * altuera - 10
+                b.Left = 40 * (zabalera + 1)
+                b.Top = 40 * (altuera + 1) - 10
                 b.BorderStyle = BorderStyle.FixedSingle
                 b.Name = altuera.ToString + "/" + zabalera.ToString
                 AddHandler b.Click, AddressOf OnbClick
@@ -38,11 +38,13 @@ Public Class ITablero
         taula(b(0), b(1)).BackgroundImage = sgta.jokoa.My.Resources.water
         'no se para que es el codigo anterior asi que lo dejo cuando no sirva lo borras y listo
         'aqui empezamos ya con los turnos 
+
+        'pruebas
+
+        'fin pruebas
         Select Case Sistema.getFase()
             Case "Hasierako Fasea"
-                If Sistema.pertsonairikDu(b(0), b(1)) Then
-                    'aqui se pedirian los datos de la casilla para hacerlos visibles
-                End If
+                pertsonaiarenDatuak(b(0), b(1))
             Case "Mugimendu Fasea"
                 If Sistema.currentDu() Then
                     'aqui significa que el rombo esta a la vista y tocaria moverse
@@ -102,4 +104,34 @@ Public Class ITablero
         Sistema.txandaAldatu()
         lblTxanda.Text = Sistema.getJokalariAktibo().getIzena()
     End Sub
+
+    Private Sub pertsonaiarenDatuak(altuera As String, zabalera As String)
+        If Sistema.pertsonairikDu(altuera, zabalera) Then
+            Dim per As Pertsonaia = Sistema.getPertsonaia(altuera, zabalera)
+            lblHp.Text = per.getHp.ToString
+            lblTeam.Text = per.getTaldea
+            lblAlk.Text = per.getAtk.ToString
+            lblDef.Text = per.getDef.ToString
+            lblMov.Text = per.getMov.ToString
+            lblAlk.Text = per.getAlk.ToString
+            If per.GetType().Equals(GetType(Jokalari)) Then
+                MsgBox("Jokalari")
+                lblName.Text = DirectCast(per, Jokalari).getIzena
+            ElseIf per.GetType().Equals(GetType(Soldadu)) Then
+                MsgBox("Soldadu")
+                lblName.Text = DirectCast(per, Soldadu).getMota
+            End If
+            statPanel.Visible = True
+        Else
+            lblHp.Text = ""
+            lblAlk.Text = ""
+            lblDef.Text = ""
+            lblMov.Text = ""
+            lblAlk.Text = ""
+            lblAlk.Name = ""
+            lblTeam.Text = ""
+            statPanel.Visible = False
+        End If
+    End Sub
+
 End Class

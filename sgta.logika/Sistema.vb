@@ -61,4 +61,8 @@
     Public Shared Function currentDu() As Boolean
         Return Not IsNothing(currentK)
     End Function
+
+    Public Shared Function getPertsonaia(ByVal altuera As Integer, ByVal zabalera As Integer) As Pertsonaia
+        Return tablero.getPertsonaia(altuera, zabalera)
+    End Function
 End Class

@@ -39,4 +39,8 @@
         Return Not IsNothing(per)
     End Function
 
+    Public Function getPertsonaia() As Pertsonaia
+        Return per
+    End Function
+
 End Class

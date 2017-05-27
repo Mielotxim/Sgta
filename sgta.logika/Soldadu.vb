@@ -16,4 +16,13 @@
         Return mota
     End Function
 
+    Public Overrides Sub erasoaJaso(ByVal atkR As Integer)
+        'formula provisional
+        'hace falta testear el daño para hacerlo justo
+        MyBase.erasoaJaso(atkR)
+        If hp = 0 Then
+            Sistema.getOponeteAktibo().soldaduaKendu(Me)
+        End If
+    End Sub
+
 End Class

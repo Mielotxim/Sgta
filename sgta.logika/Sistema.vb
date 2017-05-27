@@ -105,4 +105,8 @@
         End If
     End Sub
 
+    Public Shared Sub cancelCurrent()
+        currentK = Nothing
+    End Sub
+
 End Class

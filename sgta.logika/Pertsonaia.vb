@@ -1,11 +1,13 @@
 ﻿Public MustInherit Class Pertsonaia
     'AT'
-    Private hp As Integer
-    Private taldea As String
-    Private def As Integer
-    Private atk As Integer
-    Private mov As Integer
-    Private alk As Integer
+    Protected hp As Integer
+    Protected taldea As String
+    Protected def As Integer
+    Protected atk As Integer
+    Protected mov As Integer
+    Protected alk As Integer
+
+    'Eraikitzailea
     Public Sub New(ByVal h As Integer, ByVal a As Integer, ByVal d As Integer, ByVal m As Integer)
         hp = h
         atk = a
@@ -46,7 +48,7 @@
         Return alk
     End Function
 
-    Public Sub erasoaJaso(ByVal atkR As Integer)
+    Public Overridable Sub erasoaJaso(ByVal atkR As Integer)
         'formula provisional
         'hace falta testear el daño para hacerlo justo
         Dim var As Integer = (Math.Floor((100 - 75 + 1) * Rnd()) + 50) / 100

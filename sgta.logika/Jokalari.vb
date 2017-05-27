@@ -2,11 +2,6 @@
     Inherits Pertsonaia
     'AT
     Private izena As String
-    Private hp As Integer
-    Private def As Integer
-    Private atk As Integer
-    Private mov As Integer
-    Private alk As Integer
     Private arm As New Armada
 
     'Eraikitzailea
@@ -17,10 +12,6 @@
 
     Public Function getIzena() As String
         Return izena
-    End Function
-
-    Public Function getArmada() As Armada
-        Return arm
     End Function
 
     Public Function nireSoldaduaDa(ByRef soldadu As Soldadu) As Boolean
@@ -34,5 +25,22 @@
     Public Overloads Function Equals(ByRef jok As Jokalari) As Boolean
         Return jok.izena.Equals(Me.izena)
     End Function
+
+    Public Sub soldaduaGehitu(ByVal aukera As String)
+        arm.soldaduaGehitu(aukera)
+    End Sub
+
+    Public Sub soldaduaKendu(ByVal sol As Soldadu)
+        arm.soldaduaKendu(sol)
+    End Sub
+
+    Public Overrides Sub erasoaJaso(ByVal atkR As Integer)
+        'formula provisional
+        'hace falta testear el daño para hacerlo justo
+        MyBase.erasoaJaso(atkR)
+        If hp = 0 Then
+            Sistema.jokoaBukatu()
+        End If
+    End Sub
 
 End Class

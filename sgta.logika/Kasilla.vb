@@ -22,12 +22,11 @@
     End Sub
 
     Public Sub kanpamendua(ByVal aukera As String)
-        If mota = "kanpamendua" And TypeOf per Is Jokalari Then
-            Dim armada As Armada
+        If mota = "kanpamendua" And per.GetType().Equals(GetType(Jokalari)) Then
+            'Dim armada As Armada
             'hace falta un casting aqui
             'armada = CType(per, Jokalari).getArmada()
-            armada = DirectCast(per, Jokalari).getArmada()
-            armada.soldaduaGehitu(aukera)
+            DirectCast(per, Jokalari).soldaduaGehitu(aukera)
         End If
     End Sub
 

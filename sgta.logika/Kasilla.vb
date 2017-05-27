@@ -43,4 +43,22 @@
         Return per
     End Function
 
+    Public Function getKoordenadak() As Integer()
+        Dim em(1) As Integer
+        em(0) = alt
+        em(1) = zab
+        Return em
+    End Function
+
+    Public Sub pertsonaiaKendu()
+        per = Nothing
+    End Sub
+
+    Sub eraso(ByVal atk As Integer)
+        per.erasoaJaso(atk)
+        If per.getHp = 0 Then
+            pertsonaiaKendu()
+        End If
+    End Sub
+
 End Class

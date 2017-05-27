@@ -37,6 +37,14 @@
         Return jokalari.getJokalari(txanda)
     End Function
 
+    Public Shared Function getOponeteAktibo() As Jokalari
+        If txanda = 0 Then
+            Return jokalari.getJokalari(1)
+        Else
+            Return jokalari.getJokalari(0)
+        End If
+    End Function
+
     Public Shared Sub jokoaBukatu()
         'insertar aqui avisos para la interfaz de ser necesario
         bukatu = True
@@ -58,6 +66,18 @@
         Return tablero.pertsonairikDu(altuera, zabalera)
     End Function
 
+    Public Shared Function pertsonaiAktiboaDu(ByVal altuera As Integer, ByVal zabalera As Integer) As Boolean
+        If pertsonairikDu(altuera, zabalera) Then
+            Dim per As Pertsonaia = getPertsonaia(altuera, zabalera)
+            If per.ekintzaEginDezake() Then
+                currentK = tablero.getKasilla(altuera, zabalera)
+                Return True
+            Else : Return False
+            End If
+        Else : Return False
+        End If
+    End Function
+
     Public Shared Function currentDu() As Boolean
         Return Not IsNothing(currentK)
     End Function
@@ -65,4 +85,24 @@
     Public Shared Function getPertsonaia(ByVal altuera As Integer, ByVal zabalera As Integer) As Pertsonaia
         Return tablero.getPertsonaia(altuera, zabalera)
     End Function
+
+    Public Shared Function getCurrent() As Kasilla
+        Return currentK
+    End Function
+
+    Public Shared Sub mugitu(ByVal altS As Integer, ByVal zabS As Integer, ByVal altI As Integer, ByVal zabI As Integer)
+        Dim p As Pertsonaia = currentK.getPertsonaia
+        tablero.getKasilla(altS, zabS).pertsonaiaKendu()
+        tablero.getKasilla(altI, zabI).pertsonaiaSartu(p)
+        currentK = Nothing
+    End Sub
+
+    Public Shared Sub eraso(ByVal altI As Integer, ByVal zabI As Integer)
+        If Not pertsonaiAktiboaDu(altI, zabI) Then
+            Dim p As Pertsonaia = currentK.getPertsonaia
+            tablero.getKasilla(altI, zabI).eraso(p.getAtk)
+            currentK = Nothing
+        End If
+    End Sub
+
 End Class

@@ -24,10 +24,7 @@ Public Class ITablero
                 Panel2.Controls.Add(b)
             Next
         Next
-
         lblTxanda.Text = Sistema.getJokalariAktibo().getIzena()
-        lblName.Text = "TU PERSONAJE"
-
     End Sub
 
     Private Sub OnbClick(ByVal sender As Object, ByVal e As MouseEventArgs)
@@ -38,28 +35,32 @@ Public Class ITablero
         taula(b(0), b(1)).BackgroundImage = sgta.jokoa.My.Resources.water
         'no se para que es el codigo anterior asi que lo dejo cuando no sirva lo borras y listo
         'aqui empezamos ya con los turnos 
-
-        'pruebas
-
-        'fin pruebas
         Select Case Sistema.getFase()
             Case "Hasierako Fasea"
                 pertsonaiarenDatuak(b(0), b(1))
             Case "Mugimendu Fasea"
                 If Sistema.currentDu() Then
                     'aqui significa que el rombo esta a la vista y tocaria moverse
+                    mugimendua(b(0), b(1))
                 Else
                     'aqui mirariamos si hay persona y despues dibujariamos el rombo
+                    pertsonaiarenMugimenduaBistaratu(b(0), b(1))
                 End If
             Case "Eraso Fasea"
                 If Sistema.currentDu() Then
                     'esta el robo de ataque mirariamos a ver si se puede atacar a la casilla indicada
                 Else
                     'aqui mirariamos si hay persona y despues dibujariamos el rombo
+                    pertsonaiarenErasoaBistaratu(b(0), b(1))
                 End If
             Case Else
                 MsgBox("Error en las fases")
         End Select
+    End Sub
+
+    Private Sub setColorBlue(altuera As String, zabalera As String, p3 As Integer)
+        Throw New NotImplementedException
+        'lo mismo que el red pero en azul
     End Sub
 
     Private Sub setColorRed(ByVal altuera As Integer, ByVal zabalera As Integer, ByVal dis As Integer)
@@ -76,6 +77,7 @@ Public Class ITablero
                 End If
             End If
             While (auxA + auxZ <= dis)
+                'indexOutOfRange Exception recordatorio de mirar cuando nos salimos del tablero
                 taula(altuera + auxA, zabalera - auxZ).BackColor = Color.Red
                 taula(altuera + auxA, zabalera + auxZ).BackColor = Color.Red
                 taula(altuera - auxA, zabalera - auxZ).BackColor = Color.Red
@@ -105,7 +107,7 @@ Public Class ITablero
         lblTxanda.Text = Sistema.getJokalariAktibo().getIzena()
     End Sub
 
-    Private Sub pertsonaiarenDatuak(altuera As String, zabalera As String)
+    Private Sub pertsonaiarenDatuak(ByVal altuera As Integer, ByVal zabalera As Integer)
         If Sistema.pertsonairikDu(altuera, zabalera) Then
             Dim per As Pertsonaia = Sistema.getPertsonaia(altuera, zabalera)
             lblHp.Text = per.getHp.ToString
@@ -115,10 +117,8 @@ Public Class ITablero
             lblMov.Text = per.getMov.ToString
             lblAlk.Text = per.getAlk.ToString
             If per.GetType().Equals(GetType(Jokalari)) Then
-                MsgBox("Jokalari")
                 lblName.Text = DirectCast(per, Jokalari).getIzena
             ElseIf per.GetType().Equals(GetType(Soldadu)) Then
-                MsgBox("Soldadu")
                 lblName.Text = DirectCast(per, Soldadu).getMota
             End If
             statPanel.Visible = True
@@ -131,6 +131,40 @@ Public Class ITablero
             lblAlk.Name = ""
             lblTeam.Text = ""
             statPanel.Visible = False
+        End If
+    End Sub
+
+    Private Sub pertsonaiarenMugimenduaBistaratu(ByVal altuera As Integer, zabalera As Integer)
+        If Sistema.pertsonaiAktiboaDu(altuera, zabalera) Then
+            setColorBlue(altuera, zabalera, Sistema.getPertsonaia(altuera, zabalera).getMov)
+        Else
+            pertsonaiarenDatuak(altuera, zabalera)
+        End If
+    End Sub
+
+    Private Sub pertsonaiarenErasoaBistaratu(ByVal altuera As Integer, ByVal zabalera As Integer)
+        If Sistema.pertsonaiAktiboaDu(altuera, zabalera) Then
+            setColorRed(altuera, zabalera, Sistema.getPertsonaia(altuera, zabalera).getMov)
+        Else
+            pertsonaiarenDatuak(altuera, zabalera)
+        End If
+    End Sub
+
+    Private Sub mugimendua(ByVal altuera As Integer, ByVal zabalera As Integer)
+        Dim k As Kasilla = Sistema.getCurrent
+        Dim koordenadak() As Integer = k.getKoordenadak
+        If k.getPertsonaia.mugimenduaHeltzenDa(koordenadak(0), koordenadak(1), altuera, zabalera) Then
+            Sistema.mugitu(koordenadak(0), koordenadak(1), altuera, zabalera)
+            'aqui habria que cambiar al personaje de casilla
+        End If
+    End Sub
+
+    Private Sub erasoa(ByVal altuera As Integer, ByVal zabalera As Integer)
+        Dim k As Kasilla = Sistema.getCurrent
+        Dim koordenadak() As Integer = k.getKoordenadak
+        If k.getPertsonaia.erasoaHeltzenDa(koordenadak(0), koordenadak(1), altuera, zabalera) Then
+            Sistema.eraso(altuera, zabalera)
+            'aqui habria que cambiar al personaje de casilla
         End If
     End Sub
 

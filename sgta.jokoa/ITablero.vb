@@ -58,9 +58,36 @@ Public Class ITablero
         End Select
     End Sub
 
-    Private Sub setColorBlue(altuera As String, zabalera As String, p3 As Integer)
-        Throw New NotImplementedException
-        'lo mismo que el red pero en azul
+    Private Sub setColorBlue(altuera As String, zabalera As String, dis As Integer)
+        Dim auxZ As Integer = 0
+        Dim auxA As Integer = dis
+        While auxA >= 0
+            If Not (auxA = 0) Then
+                If (altuera - auxA >= 0) Then
+                    taula(altuera - auxA, zabalera).BackgroundImage = sgta.jokoa.My.Resources.water
+                End If
+                If (altuera + auxA < Sistema.getTable.getAltuera()) Then
+                    taula(altuera + auxA, zabalera).BackgroundImage = sgta.jokoa.My.Resources.water
+                End If
+            End If
+            While (auxA + auxZ <= dis)
+                If (altuera - auxA >= 0) And (zabalera - auxZ >= 0) Then
+                    taula(altuera - auxA, zabalera - auxZ).BackgroundImage = sgta.jokoa.My.Resources.water
+                End If
+                If (altuera - auxA >= 0) And (zabalera + auxZ < Sistema.getTable.getZabalera()) Then
+                    taula(altuera - auxA, zabalera + auxZ).BackgroundImage = sgta.jokoa.My.Resources.water
+                End If
+                If (altuera + auxA < Sistema.getTable.getAltuera()) And (zabalera - auxZ >= 0) Then
+                    taula(altuera + auxA, zabalera - auxZ).BackgroundImage = sgta.jokoa.My.Resources.water
+                End If
+                If (altuera + auxA < Sistema.getTable.getAltuera()) And (zabalera + auxZ < Sistema.getTable.getZabalera()) Then
+                    taula(altuera + auxA, zabalera + auxZ).BackgroundImage = sgta.jokoa.My.Resources.water
+                End If
+                auxZ += 1
+            End While
+            auxZ = 0
+            auxA -= 1
+        End While
     End Sub
 
     Private Sub setColorRed(ByVal altuera As Integer, ByVal zabalera As Integer, ByVal dis As Integer)
@@ -72,7 +99,7 @@ Public Class ITablero
                 If (altuera - auxA >= 0) Then
                     taula(altuera - auxA, zabalera).BackColor = Color.Red
                 End If
-                If (altuera + auxA <= Sistema.getTable.getAltuera()) Then
+                If (altuera + auxA < Sistema.getTable.getAltuera()) Then
                     taula(altuera + auxA, zabalera).BackColor = Color.Red
                 End If
             End If
@@ -80,13 +107,13 @@ Public Class ITablero
                 If (altuera - auxA >= 0) And (zabalera - auxZ >= 0) Then
                     taula(altuera - auxA, zabalera - auxZ).BackColor = Color.Red
                 End If
-                If (altuera - auxA >= 0) And (zabalera + auxZ >= Sistema.getTable.getZabalera()) Then
+                If (altuera - auxA >= 0) And (zabalera + auxZ < Sistema.getTable.getZabalera()) Then
                     taula(altuera - auxA, zabalera + auxZ).BackColor = Color.Red
                 End If
-                If (altuera + auxA >= Sistema.getTable.getAltuera()) And (zabalera - auxZ >= 0) Then
+                If (altuera + auxA < Sistema.getTable.getAltuera()) And (zabalera - auxZ >= 0) Then
                     taula(altuera + auxA, zabalera - auxZ).BackColor = Color.Red
                 End If
-                If (altuera + auxA >= Sistema.getTable.getAltuera()) And (zabalera + auxZ >= Sistema.getTable.getZabalera()) Then
+                If (altuera + auxA < Sistema.getTable.getAltuera()) And (zabalera + auxZ < Sistema.getTable.getZabalera()) Then
                     taula(altuera + auxA, zabalera + auxZ).BackColor = Color.Red
                 End If
                 auxZ += 1
@@ -106,7 +133,7 @@ Public Class ITablero
                 If (altuera - auxA >= 0) Then
                     taula(altuera - auxA, zabalera).BackgroundImage = sgta.jokoa.My.Resources.floresiñas
                 End If
-                If (altuera + auxA <= Sistema.getTable.getAltuera()) Then
+                If (altuera + auxA < Sistema.getTable.getAltuera()) Then
                     taula(altuera + auxA, zabalera).BackgroundImage = sgta.jokoa.My.Resources.floresiñas
                 End If
             End If
@@ -114,13 +141,13 @@ Public Class ITablero
                 If (altuera - auxA >= 0) And (zabalera - auxZ >= 0) Then
                     taula(altuera - auxA, zabalera - auxZ).BackgroundImage = sgta.jokoa.My.Resources.floresiñas
                 End If
-                If (altuera - auxA >= 0) And (zabalera + auxZ >= Sistema.getTable.getZabalera()) Then
+                If (altuera - auxA >= 0) And (zabalera + auxZ < Sistema.getTable.getZabalera()) Then
                     taula(altuera - auxA, zabalera + auxZ).BackgroundImage = sgta.jokoa.My.Resources.floresiñas
                 End If
-                If (altuera + auxA >= Sistema.getTable.getAltuera()) And (zabalera - auxZ >= 0) Then
+                If (altuera + auxA < Sistema.getTable.getAltuera()) And (zabalera - auxZ >= 0) Then
                     taula(altuera + auxA, zabalera - auxZ).BackgroundImage = sgta.jokoa.My.Resources.floresiñas
                 End If
-                If (altuera + auxA >= Sistema.getTable.getAltuera()) And (zabalera + auxZ >= Sistema.getTable.getZabalera()) Then
+                If (altuera + auxA < Sistema.getTable.getAltuera()) And (zabalera + auxZ < Sistema.getTable.getZabalera()) Then
                     taula(altuera + auxA, zabalera + auxZ).BackgroundImage = sgta.jokoa.My.Resources.floresiñas
                 End If
                 auxZ += 1

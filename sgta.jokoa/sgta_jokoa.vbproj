@@ -50,6 +50,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\sgta.db\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="sgta.db">
+      <HintPath>..\sgta.db\bin\Debug\sgta.db.dll</HintPath>
+    </Reference>
     <Reference Include="sgta.logika">
       <HintPath>..\sgta.logika\bin\Debug\sgta.logika.dll</HintPath>
     </Reference>

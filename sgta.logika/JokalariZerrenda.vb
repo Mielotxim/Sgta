@@ -1,12 +1,11 @@
 ﻿Public Class JokalariZerrenda
     'AT
-    Private jokalari(2) As Jokalari
+    Private jokalari(1) As Jokalari
     Private jokaKop As Integer
 
     'Eraikitzailea
     Public Sub New()
         jokaKop = 0
-        Array.Resize(jokalari, 2)
     End Sub
 
     'Metodoak

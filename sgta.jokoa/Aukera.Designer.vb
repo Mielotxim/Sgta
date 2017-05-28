@@ -33,6 +33,12 @@ Partial Class Aukera
         Me.Label6 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -40,7 +46,7 @@ Partial Class Aukera
         '
         Me.Button1.BackColor = System.Drawing.Color.YellowGreen
         Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.Location = New System.Drawing.Point(391, 378)
+        Me.Button1.Location = New System.Drawing.Point(443, 378)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(97, 71)
         Me.Button1.TabIndex = 0
@@ -66,7 +72,7 @@ Partial Class Aukera
         Me.Label2.BackColor = System.Drawing.Color.Gold
         Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(106, 327)
+        Me.Label2.Location = New System.Drawing.Point(93, 327)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(59, 19)
         Me.Label2.TabIndex = 10
@@ -90,7 +96,7 @@ Partial Class Aukera
         Me.Label4.BackColor = System.Drawing.Color.Gold
         Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(106, 267)
+        Me.Label4.Location = New System.Drawing.Point(93, 267)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(59, 19)
         Me.Label4.TabIndex = 12
@@ -102,7 +108,7 @@ Partial Class Aukera
         Me.Label5.BackColor = System.Drawing.Color.Gold
         Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(106, 208)
+        Me.Label5.Location = New System.Drawing.Point(93, 208)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(59, 19)
         Me.Label5.TabIndex = 13
@@ -124,7 +130,7 @@ Partial Class Aukera
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox1.Location = New System.Drawing.Point(277, 118)
+        Me.PictureBox1.Location = New System.Drawing.Point(340, 118)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(200, 250)
         Me.PictureBox1.TabIndex = 15
@@ -141,12 +147,91 @@ Partial Class Aukera
         Me.ComboBox1.Size = New System.Drawing.Size(225, 24)
         Me.ComboBox1.TabIndex = 16
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Gold
+        Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(174, 267)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(49, 19)
+        Me.Label7.TabIndex = 22
+        Me.Label7.Text = "MOV:"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Gold
+        Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(264, 208)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(59, 19)
+        Me.Label8.TabIndex = 21
+        Me.Label8.Text = "Label8"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Gold
+        Me.Label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(264, 267)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(59, 19)
+        Me.Label9.TabIndex = 20
+        Me.Label9.Text = "Label9"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Gold
+        Me.Label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(174, 327)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(44, 19)
+        Me.Label10.TabIndex = 19
+        Me.Label10.Text = "ALK:"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Gold
+        Me.Label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(264, 327)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(68, 19)
+        Me.Label11.TabIndex = 18
+        Me.Label11.Text = "Label11"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.Gold
+        Me.Label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(174, 208)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(75, 19)
+        Me.Label12.TabIndex = 17
+        Me.Label12.Text = "TALDEA:"
+        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Aukera
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.sgta.jokoa.My.Resources.Resources.select_character2
-        Me.ClientSize = New System.Drawing.Size(500, 461)
+        Me.ClientSize = New System.Drawing.Size(552, 461)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label6)
@@ -175,4 +260,10 @@ Partial Class Aukera
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents Label12 As System.Windows.Forms.Label
 End Class

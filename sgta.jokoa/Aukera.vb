@@ -1,12 +1,19 @@
 ﻿Imports sgta.logika
+Imports sgta.db
+Imports MySql.Data.MySqlClient
 
 Public Class Aukera
-
-
 
     Dim per(5) As Jokalari
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        datuBasea.Konektatu()
+        Dim dr As MySqlDataReader = datuBasea.PertsonaiakLortu()
+        Dim jok As New ArrayList
+        While dr.Read
+            'Dim j As New Jokalari(dr.Item(0).ToString, 
+            'jok.Add()
+        End While
         per(0) = New Jokalari("Shinzō Abe", 100, 10, 10, 2)
         per(1) = New Jokalari("Kim Yong Un", 101, 10, 10, 2)
         per(2) = New Jokalari("Xi Jinping", 102, 10, 10, 2)
@@ -21,13 +28,12 @@ Public Class Aukera
         Label5.Text = per(0).getHp
         Label4.Text = per(0).getAtk
         Label2.Text = per(0).getDef
+        datuBasea.ItxiKonexioa()
     End Sub
 
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs)
         MsgBox("QUE TE PETEN !!!")
     End Sub
-
-
 
     Private Sub Button1_MouseHover(sender As Object, e As EventArgs) Handles Button1.MouseHover
         Button1.BackColor = Color.GreenYellow

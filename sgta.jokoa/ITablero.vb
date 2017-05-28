@@ -153,7 +153,7 @@ Public Class ITablero
             Dim per As Pertsonaia = Sistema.getPertsonaia(altuera, zabalera)
             lblHp.Text = per.getHp.ToString
             lblTeam.Text = per.getTaldea
-            lblAlk.Text = per.getAtk.ToString
+            lblAtk.Text = per.getAtk.ToString
             lblDef.Text = per.getDef.ToString
             lblMov.Text = per.getMov.ToString
             lblAlk.Text = per.getAlk.ToString

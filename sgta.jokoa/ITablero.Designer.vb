@@ -122,7 +122,7 @@ Partial Class ITablero
         '
         Me.statPanel.ColumnCount = 4
         Me.statPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.85792!))
-        Me.statPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.3224!))
+        Me.statPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.22951!))
         Me.statPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.49727!))
         Me.statPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.3224!))
         Me.statPanel.Controls.Add(Me.lblName, 0, 0)
@@ -176,7 +176,7 @@ Partial Class ITablero
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(3, 93)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(31, 13)
+        Me.Label3.Size = New System.Drawing.Size(34, 13)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "ATK: "
         '
@@ -184,9 +184,9 @@ Partial Class ITablero
         '
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(3, 127)
+        Me.Label4.Location = New System.Drawing.Point(3, 134)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(31, 26)
+        Me.Label4.Size = New System.Drawing.Size(34, 13)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "MOV: "
         '
@@ -194,7 +194,7 @@ Partial Class ITablero
         '
         Me.lblHp.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblHp.AutoSize = True
-        Me.lblHp.Location = New System.Drawing.Point(42, 53)
+        Me.lblHp.Location = New System.Drawing.Point(43, 53)
         Me.lblHp.Name = "lblHp"
         Me.lblHp.Size = New System.Drawing.Size(39, 13)
         Me.lblHp.TabIndex = 4
@@ -204,7 +204,7 @@ Partial Class ITablero
         '
         Me.lblAtk.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblAtk.AutoSize = True
-        Me.lblAtk.Location = New System.Drawing.Point(42, 93)
+        Me.lblAtk.Location = New System.Drawing.Point(43, 93)
         Me.lblAtk.Name = "lblAtk"
         Me.lblAtk.Size = New System.Drawing.Size(39, 13)
         Me.lblAtk.TabIndex = 5
@@ -214,7 +214,7 @@ Partial Class ITablero
         '
         Me.lblMov.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblMov.AutoSize = True
-        Me.lblMov.Location = New System.Drawing.Point(42, 134)
+        Me.lblMov.Location = New System.Drawing.Point(43, 134)
         Me.lblMov.Name = "lblMov"
         Me.lblMov.Size = New System.Drawing.Size(39, 13)
         Me.lblMov.TabIndex = 6

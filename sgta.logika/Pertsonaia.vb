@@ -8,11 +8,13 @@
     Protected alk As Integer
 
     'Eraikitzailea
-    Public Sub New(ByVal h As Integer, ByVal a As Integer, ByVal d As Integer, ByVal m As Integer)
+    Public Sub New(ByVal h As Integer, ByVal t As String, ByVal a As Integer, ByVal d As Integer, ByVal m As Integer, ByVal al As Integer)
         hp = h
+        taldea = t
         atk = a
         def = d
         mov = m
+        alk = al
     End Sub
 
     'cambiar los set por un atkGehitu()???

@@ -4,18 +4,18 @@ Public Class Armada
     Private listaSoldadu(9) As Soldadu 'una losta del 0 al 9 son 10 soldados
     Private solKop As Integer
 
-    Public Sub New()
-        listaSoldadu(0) = a.soldaduaSortu("mele")
-        listaSoldadu(1) = a.soldaduaSortu("mele")
-        listaSoldadu(2) = a.soldaduaSortu("sniper")
-        listaSoldadu(3) = a.soldaduaSortu("tank")
+    Public Sub New(ByVal taldea As String)
+        listaSoldadu(0) = a.soldaduaSortu("mele", taldea)
+        listaSoldadu(1) = a.soldaduaSortu("mele", taldea)
+        listaSoldadu(2) = a.soldaduaSortu("sniper", taldea)
+        listaSoldadu(3) = a.soldaduaSortu("tank", taldea)
         solKop = 4
     End Sub
 
-    Public Sub soldaduaGehitu(ByVal s As String)
+    Public Sub soldaduaGehitu(ByVal s As String, ByVal taldea As String)
         If solKop < 10 Then
             Dim soldaten As Soldadu
-            soldaten = a.soldaduaSortu(s)
+            soldaten = a.soldaduaSortu(s, taldea)
             listaSoldadu(solKop) = soldaten
             'Tablero.soldaduBerriaKokatu(soldaten)
             solKop += 1

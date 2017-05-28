@@ -4,30 +4,27 @@ Imports MySql.Data.MySqlClient
 
 Public Class Aukera
 
-    Dim per(5) As Jokalari
+    'Private per(5) As Jokalari
+    Private jok As ArrayList
+    Private jz As JokalariZerrenda
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        jz = New JokalariZerrenda
         datuBasea.Konektatu()
         Dim dr As MySqlDataReader = datuBasea.PertsonaiakLortu()
-        Dim jok As New ArrayList
+        jok = New ArrayList
         While dr.Read
-            'Dim j As New Jokalari(dr.Item(0).ToString, 
-            'jok.Add()
+            Dim iz As String = dr.Item(0)
+            Dim tal As String = dr.Item(1)
+            Dim hp As Integer = dr.Item(2)
+            Dim atk As Integer = dr.Item(3)
+            Dim def As Integer = dr.Item(4)
+            Dim mov As Integer = dr.Item(5)
+            Dim alk As Integer = dr.Item(6)
+            Dim j As New Jokalari(iz, hp, tal, atk, def, mov, alk)
+            jok.Add(j)
+            ComboBox1.Items.Add(j.getIzena)
         End While
-        per(0) = New Jokalari("Shinzō Abe", 100, 10, 10, 2)
-        per(1) = New Jokalari("Kim Yong Un", 101, 10, 10, 2)
-        per(2) = New Jokalari("Xi Jinping", 102, 10, 10, 2)
-        per(3) = New Jokalari("Donald Trump", 103, 10, 10, 2)
-        per(4) = New Jokalari("Vladimir Putin", 104, 10, 10, 2)
-        ComboBox1.Items.Add("Shinzō Abe")
-        ComboBox1.Items.Add("Kim Yong Un")
-        ComboBox1.Items.Add("Xi Jinping")
-        ComboBox1.Items.Add("Donald Trump")
-        ComboBox1.Items.Add("Vladimir Putin")
-
-        Label5.Text = per(0).getHp
-        Label4.Text = per(0).getAtk
-        Label2.Text = per(0).getDef
         datuBasea.ItxiKonexioa()
     End Sub
 
@@ -45,50 +42,36 @@ Public Class Aukera
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim jokalariak As New JokalariZerrenda
-        Dim aux As Jokalari
-        aux = bilatuJokalaria()
-        MsgBox(aux.getIzena)
-        jokalariak.addJokalari(aux)
-        Sistema.jokoaHasi("Erraza", jokalariak)
-        Dim form As ITablero
-        form = New ITablero
-        form.Show()
-        Me.Hide()
+        If jz.getKop < 2 Then
+            MsgBox("Jokalariak falta dira")
+        Else
+            MsgBox(jz.getJokalari(0).getIzena)
+            MsgBox(jz.getJokalari(1).getIzena)
+            Sistema.jokoaHasi("Erraza", jz)
+            Dim form As ITablero
+            form = New ITablero
+            form.Show()
+            Me.Hide()
+        End If
+
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
-
-        If ComboBox1.SelectedItem.ToString = per(0).getIzena() Then
-            PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Chino
-            Label5.Text = per(0).getHp
-            Label4.Text = per(0).getAtk
-            Label2.Text = per(0).getDef
-
-        ElseIf ComboBox1.SelectedItem.ToString = per(1).getIzena() Then
-            PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Koreano
-            Label5.Text = per(1).getHp
-            Label4.Text = per(1).getAtk
-            Label2.Text = per(1).getDef
-
-        ElseIf ComboBox1.SelectedItem.ToString = per(2).getIzena() Then
-            PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Japones
-            Label5.Text = per(2).getHp
-            Label4.Text = per(2).getAtk
-            Label2.Text = per(2).getDef
-
-        ElseIf ComboBox1.SelectedItem.ToString = per(3).getIzena() Then
-            PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Trump
-            Label5.Text = per(3).getHp
-            Label4.Text = per(3).getAtk
-            Label2.Text = per(3).getDef
-
-        ElseIf ComboBox1.SelectedItem.ToString = per(4).getIzena() Then
-            PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Putin1
-            Label5.Text = per(4).getHp
-            Label4.Text = per(4).getAtk
-            Label2.Text = per(4).getDef
-        End If
+        Dim aur As Boolean = False
+        Dim i As Integer = 0
+        While Not aur And i < jok.Count
+            Dim j As Jokalari = jok(i)
+            If ComboBox1.SelectedItem.ToString.Equals(j.getIzena) Then
+                aur = True
+                lblHp.Text = j.getHp
+                lblTaldea.Text = j.getTaldea
+                lblAtk.Text = j.getAtk
+                lblDef.Text = j.getDef
+                lblMov.Text = j.getMov
+                lblAlk.Text = j.getAlk
+            End If
+            i += 1
+        End While
     End Sub
 
     Private Function bilatuJokalaria() As Jokalari
@@ -98,9 +81,9 @@ Public Class Aukera
         i = 0
         bukatuta = False
         aux = Nothing
-        While Not bukatuta And i < per.Length
-            If per(i).getIzena = ComboBox1.SelectedItem.ToString Then
-                aux = per(i)
+        While Not bukatuta And i < jok.Count
+            If jok(i).getIzena = ComboBox1.SelectedItem.ToString Then
+                aux = jok(i)
                 bukatuta = True
             Else
                 i = i + 1
@@ -109,4 +92,36 @@ Public Class Aukera
         MsgBox(aux.getIzena)
         Return aux
     End Function
+
+    Private Sub btnPl1_Click(sender As Object, e As EventArgs) Handles btnPl1.Click
+        'falta mirar que los personajes no se repitan
+        Dim aur As Boolean = False
+        Dim i As Integer = 0
+        Dim j As Jokalari = Nothing
+        While Not aur And i < jok.Count
+            j = jok(i)
+            If ComboBox1.SelectedItem.ToString.Equals(j.getIzena) Then
+                aur = True
+            End If
+            i += 1
+        End While
+        jz.addJokalari(j, 0)
+        btnPl1.Enabled = False
+    End Sub
+
+    Private Sub btnPl2_Click(sender As Object, e As EventArgs) Handles btnPl2.Click
+        'falta mirar que los personajes no se repitan
+        Dim aur As Boolean = False
+        Dim i As Integer = 0
+        Dim j As Jokalari = Nothing
+        While Not aur And i < jok.Count
+            j = jok(i)
+            If ComboBox1.SelectedItem.ToString.Equals(j.getIzena) Then
+                aur = True
+            End If
+            i += 1
+        End While
+        jz.addJokalari(j, 1)
+        btnPl2.Enabled = False
+    End Sub
 End Class

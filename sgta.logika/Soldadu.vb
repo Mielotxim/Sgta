@@ -3,9 +3,9 @@
 
     Private mota As String
 
-    Public Sub New(ByVal mot As String, ByVal h As Integer, ByVal a As Integer, ByVal al As Integer, ByVal m As Integer)
-        MyBase.New(h, a, al, m)
-        mota = m
+    Public Sub New(ByVal mot As String, ByVal h As Integer, ByVal t As String, ByVal a As Integer, ByVal d As Integer, ByVal m As Integer, ByVal al As Integer)
+        MyBase.New(h, t, a, d, m, al)
+        mota = mot
     End Sub
 
     Public Overrides Function ekintzaEginDezake() As Boolean

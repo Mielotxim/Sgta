@@ -32,3 +32,6 @@ C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\o
 C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.Resources.resources
 C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta.jokoa.ITablero.resources
 C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\obj\Debug\sgta_jokoa.vbproj.GenerateResource.Cache
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\bin\Debug\sgta.db.dll
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\bin\Debug\sgta.db.pdb
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\bin\Debug\sgta.db.xml

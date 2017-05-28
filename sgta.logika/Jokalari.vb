@@ -2,12 +2,13 @@
     Inherits Pertsonaia
     'AT
     Private izena As String
-    Private arm As New Armada
+    Private arm As Armada
 
     'Eraikitzailea
-    Public Sub New(ByVal iz As String, ByVal h As Integer, ByVal a As Integer, ByVal d As Integer, ByVal m As Integer)
-        MyBase.New(h, a, d, m)
+    Public Sub New(ByVal iz As String, ByVal h As Integer, ByVal t As String, ByVal a As Integer, ByVal d As Integer, ByVal m As Integer, ByVal al As Integer)
+        MyBase.New(h, t, a, d, m, al)
         izena = iz
+        arm = New Armada(taldea)
     End Sub
 
     Public Function getIzena() As String
@@ -27,7 +28,7 @@
     End Function
 
     Public Sub soldaduaGehitu(ByVal aukera As String)
-        arm.soldaduaGehitu(aukera)
+        arm.soldaduaGehitu(aukera, taldea)
     End Sub
 
     Public Sub soldaduaKendu(ByVal sol As Soldadu)

@@ -49,3 +49,7 @@ C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta-jokoa\TableroImage
 C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta-jokoa\TableroImagenes\obj\Debug\TableroImagenes.Form1.resources
 C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta-jokoa\TableroImagenes\obj\Debug\TableroImagenes.Resources.resources
 C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta-jokoa\TableroImagenes\obj\Debug\TableroImagenes.vbproj.GenerateResource.Cache
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\TableroImagenes\bin\Debug\MySql.Data.dll
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\TableroImagenes\bin\Debug\sgta.db.dll
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\TableroImagenes\bin\Debug\sgta.db.pdb
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\TableroImagenes\bin\Debug\sgta.db.xml

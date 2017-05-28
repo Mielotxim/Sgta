@@ -9,15 +9,11 @@
     End Sub
 
     'Metodoak
-    Public Sub addJokalari(ByVal j As Jokalari)
-        '  If jokaKop < 2 Then
-        'MsgBox(2)
-        'jokalari(jokaKop) = j
-        'MsgBox(3)
-        jokaKop += 1
-
-        'End If
-        jokalari(0) = j
+    Public Sub addJokalari(ByVal j As Jokalari, ByVal pos As Integer)
+        If jokaKop < 2 And pos < 2 And pos > -1 Then
+            jokaKop += 1
+            jokalari(pos) = j
+        End If
     End Sub
 
     Public Function getKop() As Integer

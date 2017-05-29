@@ -49,6 +49,8 @@ Partial Class ITablero
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lblAkzio = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.statPanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -57,6 +59,8 @@ Partial Class ITablero
         'Panel1
         '
         Me.Panel1.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Panel1.Controls.Add(Me.lblAkzio)
+        Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.lblTxanda)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.Button5)
@@ -76,7 +80,7 @@ Partial Class ITablero
         'lblTxanda
         '
         Me.lblTxanda.AutoSize = True
-        Me.lblTxanda.Location = New System.Drawing.Point(80, 304)
+        Me.lblTxanda.Location = New System.Drawing.Point(105, 304)
         Me.lblTxanda.Name = "lblTxanda"
         Me.lblTxanda.Size = New System.Drawing.Size(53, 13)
         Me.lblTxanda.TabIndex = 12
@@ -103,7 +107,7 @@ Partial Class ITablero
         'lblFase
         '
         Me.lblFase.AutoSize = True
-        Me.lblFase.Location = New System.Drawing.Point(80, 331)
+        Me.lblFase.Location = New System.Drawing.Point(105, 331)
         Me.lblFase.Name = "lblFase"
         Me.lblFase.Size = New System.Drawing.Size(40, 13)
         Me.lblFase.TabIndex = 9
@@ -291,7 +295,7 @@ Partial Class ITablero
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(14, 451)
+        Me.Button3.Location = New System.Drawing.Point(14, 482)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(184, 23)
         Me.Button3.TabIndex = 5
@@ -300,7 +304,7 @@ Partial Class ITablero
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(14, 412)
+        Me.Button2.Location = New System.Drawing.Point(14, 453)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(184, 23)
         Me.Button2.TabIndex = 4
@@ -309,7 +313,7 @@ Partial Class ITablero
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(14, 373)
+        Me.Button1.Location = New System.Drawing.Point(14, 424)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(184, 23)
         Me.Button1.TabIndex = 3
@@ -334,6 +338,24 @@ Partial Class ITablero
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1019, 612)
         Me.Panel2.TabIndex = 1
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(20, 360)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(67, 13)
+        Me.Label5.TabIndex = 13
+        Me.Label5.Text = "AKZIO KOP:"
+        '
+        'lblAkzio
+        '
+        Me.lblAkzio.AutoSize = True
+        Me.lblAkzio.Location = New System.Drawing.Point(105, 360)
+        Me.lblAkzio.Name = "lblAkzio"
+        Me.lblAkzio.Size = New System.Drawing.Size(43, 13)
+        Me.lblAkzio.TabIndex = 14
+        Me.lblAkzio.Text = "lblAkzio"
         '
         'ITablero
         '
@@ -380,4 +402,6 @@ Partial Class ITablero
     Friend WithEvents lblTxanda As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents lblAkzio As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
 End Class

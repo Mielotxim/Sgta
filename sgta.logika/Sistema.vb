@@ -7,6 +7,7 @@
     Private Shared bukatu As Boolean
     Private Shared currentK As Kasilla
     Private Shared fasea As String
+    Private Shared akzio As Integer
 
     'Eraikizailea
     Private Sub New()
@@ -19,12 +20,14 @@
         jokalari = j
         tablero.jokalariakSartu(jokalari)
         txandaKop = 0
+        akzio = 3
         txandaAldatu()
         bukatu = False
     End Sub
 
     Public Shared Sub txandaAldatu()
         fasea = "Hasierako Fasea"
+        akzio = 3
         txanda = txandaKop Mod jokalari.getKop()
         txandaKop += 1
         currentK = Nothing
@@ -97,6 +100,7 @@
 
     Public Shared Sub mugitu(ByVal altS As Integer, ByVal zabS As Integer, ByVal altI As Integer, ByVal zabI As Integer)
         Dim p As Pertsonaia = currentK.getPertsonaia
+        akzio = akzio - 1
         tablero.getKasilla(altS, zabS).pertsonaiaKendu()
         tablero.getKasilla(altI, zabI).pertsonaiaSartu(p)
         currentK = Nothing
@@ -104,6 +108,7 @@
 
     Public Shared Sub eraso(ByVal altI As Integer, ByVal zabI As Integer)
         If Not pertsonaiAktiboaDu(altI, zabI) Then
+            akzio = akzio - 1
             Dim p As Pertsonaia = currentK.getPertsonaia
             tablero.getKasilla(altI, zabI).eraso(p.getAtk)
             currentK = Nothing
@@ -113,5 +118,9 @@
     Public Shared Sub cancelCurrent()
         currentK = Nothing
     End Sub
+
+    Public Shared Function getAkzio() As Integer
+        Return akzio
+    End Function
 
 End Class

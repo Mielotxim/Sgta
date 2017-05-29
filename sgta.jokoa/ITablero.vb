@@ -29,6 +29,7 @@ Public Class ITablero
         pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2, 1)
         pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2, Sistema.getTable.getZabalera - 2)
         lblTxanda.Text = Sistema.getJokalariAktibo().getIzena()
+        lblAkzio.Text = Sistema.getAkzio()
     End Sub
 
     Private Sub OnbClick(ByVal sender As Object, ByVal e As MouseEventArgs)
@@ -42,20 +43,32 @@ Public Class ITablero
             Case "Hasierako Fasea"
                 pertsonaiarenDatuak(b(0), b(1))
             Case "Mugimendu Fasea"
-                If Sistema.currentDu() Then
-                    'aqui significa que el rombo esta a la vista y tocaria moverse
-                    mugimendua(b(0), b(1))
+                If Sistema.getAkzio = 0 Then
+                    MsgBox("Sentitzen dugu, baina ez zaizkizu mugumendurik gelditzen. Txanda hurrengo jokalarira pasako da.")
+                    txandaAldaketa()
                 Else
-                    'aqui mirariamos si hay persona y despues dibujariamos el rombo
-                    pertsonaiarenMugimenduaBistaratu(b(0), b(1))
+                    If Sistema.currentDu() Then
+                        'aqui significa que el rombo esta a la vista y tocaria moverse
+                        mugimendua(b(0), b(1))
+                    Else
+                        'aqui mirariamos si hay persona y despues dibujariamos el rombo
+                        pertsonaiarenMugimenduaBistaratu(b(0), b(1))
+                    End If
+                    lblAkzio.Text = Sistema.getAkzio()
                 End If
             Case "Eraso Fasea"
-                If Sistema.currentDu() Then
-                    'esta el robo de ataque mirariamos a ver si se puede atacar a la casilla indicada
-                    erasoa(b(0), b(1))
+                If Sistema.getAkzio = 0 Then
+                    MsgBox("Sentitzen dugu, baina ez zaizkizu mugumendurik gelditzen. Txanda hurrengo jokalarira pasako da.")
+                    txandaAldaketa()
                 Else
-                    'aqui mirariamos si hay persona y despues dibujariamos el rombo
-                    pertsonaiarenErasoaBistaratu(b(0), b(1))
+                    If Sistema.currentDu() Then
+                        'esta el robo de ataque mirariamos a ver si se puede atacar a la casilla indicada
+                        erasoa(b(0), b(1))
+                    Else
+                        'aqui mirariamos si hay persona y despues dibujariamos el rombo
+                        pertsonaiarenErasoaBistaratu(b(0), b(1))
+                    End If
+                    lblAkzio.Text = Sistema.getAkzio()
                 End If
             Case Else
                 MsgBox("Error en las fases")
@@ -187,6 +200,10 @@ Public Class ITablero
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        txandaAldaketa()
+    End Sub
+
+    Private Sub txandaAldaketa()
         Button1.Enabled = True
         Button2.Enabled = True
         If Sistema.currentDu() Then
@@ -197,6 +214,7 @@ Public Class ITablero
         lblFase.Text = "Hasierako Fasea"
         Sistema.txandaAldatu()
         lblTxanda.Text = Sistema.getJokalariAktibo().getIzena()
+        lblAkzio.Text = Sistema.getAkzio()
     End Sub
 
     Private Sub pertsonaiarenDatuak(ByVal altuera As Integer, ByVal zabalera As Integer)

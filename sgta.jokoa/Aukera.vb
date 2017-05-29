@@ -142,4 +142,10 @@ Public Class Aukera
         jz.addJokalari(j, 1)
         btnPl2.Enabled = False
     End Sub
+
+    Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
+        If ComboBox2.SelectedItem.ToString = "Zaila" Then
+            MsgBox("Si no tienes un ordenador de la nasa ten cuidado, no nos hacemos responsables de tu ordenador :) ")
+        End If
+    End Sub
 End Class

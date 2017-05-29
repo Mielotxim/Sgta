@@ -28,9 +28,7 @@ Public Class Aukera
         datuBasea.ItxiKonexioa()
     End Sub
 
-    Private Sub PictureBox4_Click(sender As Object, e As EventArgs)
-        MsgBox("QUE TE PETEN !!!")
-    End Sub
+
 
     Private Sub Button1_MouseHover(sender As Object, e As EventArgs) Handles Button1.MouseHover
         Button1.BackColor = Color.GreenYellow
@@ -45,8 +43,8 @@ Public Class Aukera
         If jz.getKop < 2 Then
             MsgBox("Jokalariak falta dira")
         Else
-            MsgBox(jz.getJokalari(0).getIzena)
-            MsgBox(jz.getJokalari(1).getIzena)
+            'MsgBox(jz.getJokalari(0).getIzena)
+            'MsgBox(jz.getJokalari(1).getIzena)
             Sistema.jokoaHasi("Erraza", jz)
             Dim form As ITablero
             form = New ITablero
@@ -59,6 +57,7 @@ Public Class Aukera
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
         Dim aur As Boolean = False
         Dim i As Integer = 0
+
         While Not aur And i < jok.Count
             Dim j As Jokalari = jok(i)
             If ComboBox1.SelectedItem.ToString.Equals(j.getIzena) Then
@@ -69,6 +68,21 @@ Public Class Aukera
                 lblDef.Text = j.getDef
                 lblMov.Text = j.getMov
                 lblAlk.Text = j.getAlk
+                If j.getIzena = "Donald Trump" Then
+                    PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Trump
+                End If
+                If j.getIzena = "Kim Yong Un" Then
+                    PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Koreano
+                End If
+                If j.getIzena = "Shinzo Abe" Then
+                    PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Japones
+                End If
+                If j.getIzena = "Vladimir Putin" Then
+                    PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Putin1
+                End If
+                If j.getIzena = "Xi Jinping" Then
+                    PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Chino
+                End If
             End If
             i += 1
         End While

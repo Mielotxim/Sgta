@@ -35,3 +35,6 @@ C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\o
 C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\bin\Debug\sgta.db.dll
 C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\bin\Debug\sgta.db.pdb
 C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\bin\Debug\sgta.db.xml
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\bin\Debug\sgta.db.dll
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\bin\Debug\sgta.db.pdb
+C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.jokoa\bin\Debug\sgta.db.xml

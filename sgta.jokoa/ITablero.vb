@@ -19,11 +19,9 @@ Public Class ITablero
                 b.BorderStyle = BorderStyle.FixedSingle
                 b.Name = altuera.ToString + "/" + zabalera.ToString
                 AddHandler b.Click, AddressOf OnbClick
-                If zabalera = 14 Or zabalera = 13 Or zabalera = 15 Then
-                    b.BackgroundImage = sgta.jokoa.My.Resources.water
-                Else
-                    b.BackgroundImage = sgta.jokoa.My.Resources.floresiñas
-                End If
+
+                b.BackgroundImage = sgta.jokoa.My.Resources.floresiñas
+
                 taula(altuera, zabalera) = b
                 Panel2.Controls.Add(b)
             Next
@@ -259,9 +257,9 @@ Public Class ITablero
     Private Sub erasoa(ByVal altuera As Integer, ByVal zabalera As Integer)
         Dim k As Kasilla = Sistema.getCurrent
         Dim koordenadak() As Integer = k.getKoordenadak
-        MsgBox(k.getPertsonaia.erasoaHeltzenDa(koordenadak(0), koordenadak(1), altuera, zabalera).ToString)
-        MsgBox(Sistema.pertsonairikDu(altuera, zabalera).ToString)
-        MsgBox((Not Sistema.pertsonairikDu(altuera, zabalera)).ToString)
+        'MsgBox(k.getPertsonaia.erasoaHeltzenDa(koordenadak(0), koordenadak(1), altuera, zabalera).ToString)
+        'MsgBox(Sistema.pertsonairikDu(altuera, zabalera).ToString)
+        'MsgBox((Not Sistema.pertsonairikDu(altuera, zabalera)).ToString)
         If k.getPertsonaia.erasoaHeltzenDa(koordenadak(0), koordenadak(1), altuera, zabalera) _
         And Sistema.pertsonairikDu(altuera, zabalera) _
         And Not Sistema.pertsonaiAktiboaDu(altuera, zabalera) Then
@@ -270,6 +268,12 @@ Public Class ITablero
             If Not Sistema.pertsonairikDu(altuera, zabalera) Then
                 'aqui habria que quitar al personaje de dicha casilla si se ha muerto
                 taula(altuera, zabalera).BackgroundImage = sgta.jokoa.My.Resources.floresiñas
+                Threading.Thread.Sleep(500)
+                If Sistema.getBukatu() Then
+                    MsgBox("JOKOA BUKATU EGIN DA!")
+                    Close()
+                    sgta.jokoa.Menu.Close()
+                End If
             End If
         End If
     End Sub

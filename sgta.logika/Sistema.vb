@@ -51,6 +51,10 @@
         bukatu = True
     End Sub
 
+    Public Shared Function getBukatu() As Boolean
+        Return bukatu
+    End Function
+
     Public Shared Sub setCurrentK(ByVal alt As Integer, ByVal zab As Integer)
         currentK = tablero.getKasilla(alt, zab)
     End Sub

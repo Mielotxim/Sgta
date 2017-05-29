@@ -26,6 +26,9 @@ Public Class Aukera
             ComboBox1.Items.Add(j.getIzena)
         End While
         datuBasea.ItxiKonexioa()
+        ComboBox2.Items.Add("Erraza")
+        ComboBox2.Items.Add("Normala")
+        ComboBox2.Items.Add("Zaila")
     End Sub
 
 
@@ -45,7 +48,8 @@ Public Class Aukera
         Else
             'MsgBox(jz.getJokalari(0).getIzena)
             'MsgBox(jz.getJokalari(1).getIzena)
-            Sistema.jokoaHasi("Erraza", jz)
+            MsgBox(ComboBox2.SelectedItem.ToString)
+            Sistema.jokoaHasi(ComboBox2.SelectedItem.ToString, jz)
             Dim form As ITablero
             form = New ITablero
             form.Show()

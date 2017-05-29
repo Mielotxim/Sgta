@@ -41,6 +41,9 @@ Partial Class Aukera
         Me.lblAlk = New System.Windows.Forms.Label()
         Me.btnPl1 = New System.Windows.Forms.Button()
         Me.btnPl2 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -61,7 +64,7 @@ Partial Class Aukera
         Me.Label1.BackColor = System.Drawing.Color.Gold
         Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 203)
+        Me.Label1.Location = New System.Drawing.Point(12, 250)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(36, 19)
         Me.Label1.TabIndex = 9
@@ -97,7 +100,7 @@ Partial Class Aukera
         Me.lblAtk.BackColor = System.Drawing.Color.Gold
         Me.lblAtk.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblAtk.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAtk.Location = New System.Drawing.Point(73, 262)
+        Me.lblAtk.Location = New System.Drawing.Point(73, 286)
         Me.lblAtk.Name = "lblAtk"
         Me.lblAtk.Size = New System.Drawing.Size(2, 19)
         Me.lblAtk.TabIndex = 12
@@ -108,7 +111,7 @@ Partial Class Aukera
         Me.Label6.BackColor = System.Drawing.Color.Gold
         Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(12, 262)
+        Me.Label6.Location = New System.Drawing.Point(13, 286)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(45, 19)
         Me.Label6.TabIndex = 14
@@ -130,7 +133,7 @@ Partial Class Aukera
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(13, 113)
+        Me.ComboBox1.Location = New System.Drawing.Point(13, 202)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(216, 24)
         Me.ComboBox1.TabIndex = 16
@@ -141,7 +144,7 @@ Partial Class Aukera
         Me.Label7.BackColor = System.Drawing.Color.Gold
         Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(154, 262)
+        Me.Label7.Location = New System.Drawing.Point(154, 286)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(49, 19)
         Me.Label7.TabIndex = 22
@@ -153,7 +156,7 @@ Partial Class Aukera
         Me.lblTaldea.BackColor = System.Drawing.Color.Gold
         Me.lblTaldea.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblTaldea.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTaldea.Location = New System.Drawing.Point(244, 203)
+        Me.lblTaldea.Location = New System.Drawing.Point(244, 250)
         Me.lblTaldea.Name = "lblTaldea"
         Me.lblTaldea.Size = New System.Drawing.Size(2, 19)
         Me.lblTaldea.TabIndex = 21
@@ -164,7 +167,7 @@ Partial Class Aukera
         Me.lblMov.BackColor = System.Drawing.Color.Gold
         Me.lblMov.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblMov.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMov.Location = New System.Drawing.Point(244, 262)
+        Me.lblMov.Location = New System.Drawing.Point(244, 286)
         Me.lblMov.Name = "lblMov"
         Me.lblMov.Size = New System.Drawing.Size(2, 19)
         Me.lblMov.TabIndex = 20
@@ -187,7 +190,7 @@ Partial Class Aukera
         Me.Label12.BackColor = System.Drawing.Color.Gold
         Me.Label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(154, 203)
+        Me.Label12.Location = New System.Drawing.Point(154, 250)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(75, 19)
         Me.Label12.TabIndex = 17
@@ -200,7 +203,7 @@ Partial Class Aukera
         Me.lblHp.BackColor = System.Drawing.Color.Gold
         Me.lblHp.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblHp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHp.Location = New System.Drawing.Point(73, 203)
+        Me.lblHp.Location = New System.Drawing.Point(73, 250)
         Me.lblHp.Name = "lblHp"
         Me.lblHp.Size = New System.Drawing.Size(2, 19)
         Me.lblHp.TabIndex = 23
@@ -238,12 +241,51 @@ Partial Class Aukera
         Me.btnPl2.Text = "2 Jokalaria Gehitu"
         Me.btnPl2.UseVisualStyleBackColor = False
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Gold
+        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(12, 173)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(110, 26)
+        Me.Label2.TabIndex = 27
+        Me.Label2.Text = "Pertsonaia"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Gold
+        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.Black
+        Me.Label4.Location = New System.Drawing.Point(12, 96)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(107, 26)
+        Me.Label4.TabIndex = 28
+        Me.Label4.Text = "Zailtasuna"
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.BackColor = System.Drawing.Color.Gold
+        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(12, 125)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(217, 24)
+        Me.ComboBox2.TabIndex = 29
+        '
         'Aukera
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.sgta.jokoa.My.Resources.Resources.select_character2
-        Me.ClientSize = New System.Drawing.Size(552, 461)
+        Me.ClientSize = New System.Drawing.Size(552, 460)
+        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnPl2)
         Me.Controls.Add(Me.btnPl1)
         Me.Controls.Add(Me.lblAlk)
@@ -288,4 +330,7 @@ Partial Class Aukera
     Friend WithEvents lblAlk As System.Windows.Forms.Label
     Friend WithEvents btnPl1 As System.Windows.Forms.Button
     Friend WithEvents btnPl2 As System.Windows.Forms.Button
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
 End Class

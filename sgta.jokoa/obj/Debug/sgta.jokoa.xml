@@ -19,6 +19,10 @@ sgta.jokoa
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
+</member><member name="P:sgta.jokoa.My.Resources.Resources.Chino1">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
 </member><member name="P:sgta.jokoa.My.Resources.Resources.City_Background">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -39,7 +43,15 @@ sgta.jokoa
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
+</member><member name="P:sgta.jokoa.My.Resources.Resources.Japones1">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
 </member><member name="P:sgta.jokoa.My.Resources.Resources.Koreano">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:sgta.jokoa.My.Resources.Resources.Koreano1">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
@@ -76,6 +88,10 @@ sgta.jokoa
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member><member name="P:sgta.jokoa.My.Resources.Resources.Trump">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:sgta.jokoa.My.Resources.Resources.Trump1">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>

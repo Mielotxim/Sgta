@@ -73,19 +73,19 @@ Public Class Aukera
                 lblMov.Text = j.getMov
                 lblAlk.Text = j.getAlk
                 If j.getIzena = "Donald Trump" Then
-                    PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Trump
+                    PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Trump1
                 End If
                 If j.getIzena = "Kim Yong Un" Then
-                    PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Koreano
+                    PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Koreano1
                 End If
                 If j.getIzena = "Shinzo Abe" Then
-                    PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Japones
+                    PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Japones1
                 End If
                 If j.getIzena = "Vladimir Putin" Then
                     PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Putin1
                 End If
                 If j.getIzena = "Xi Jinping" Then
-                    PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Chino
+                    PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Chino1
                 End If
             End If
             i += 1

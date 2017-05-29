@@ -11,6 +11,9 @@
         arm = New Armada(taldea)
     End Sub
 
+    Public Function getArmada() As Armada
+        Return arm
+    End Function
     Public Function getIzena() As String
         Return izena
     End Function

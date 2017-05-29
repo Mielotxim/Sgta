@@ -1,8 +1,12 @@
 ﻿Imports sgta.logika
+Imports System
+Imports System.IO
 
 Public Class ITablero
+
     Dim taula(Sistema.getTable().getAltuera - 1, Sistema.getTable().getZabalera - 1) As PictureBox
     'Dim taula(100, 100) As PictureBox
+
     Private Sub Tablero_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblFase.Text = "Hasierako Fasea"
         For altuera As Integer = 0 To (Sistema.getTable().getAltuera - 1)
@@ -24,6 +28,8 @@ Public Class ITablero
                 Panel2.Controls.Add(b)
             Next
         Next
+        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2, 1)
+        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2, Sistema.getTable.getZabalera - 2)
         lblTxanda.Text = Sistema.getJokalariAktibo().getIzena()
     End Sub
 
@@ -32,7 +38,6 @@ Public Class ITablero
         Dim b(1) As String
         a = sender.name
         b = a.Split("/")
-        taula(b(0), b(1)).BackgroundImage = sgta.jokoa.My.Resources.water
         'no se para que es el codigo anterior asi que lo dejo cuando no sirva lo borras y listo
         'aqui empezamos ya con los turnos 
         Select Case Sistema.getFase()
@@ -49,6 +54,7 @@ Public Class ITablero
             Case "Eraso Fasea"
                 If Sistema.currentDu() Then
                     'esta el robo de ataque mirariamos a ver si se puede atacar a la casilla indicada
+                    erasoa(b(0), b(1))
                 Else
                     'aqui mirariamos si hay persona y despues dibujariamos el rombo
                     pertsonaiarenErasoaBistaratu(b(0), b(1))
@@ -62,26 +68,30 @@ Public Class ITablero
         Dim auxZ As Integer = 0
         Dim auxA As Integer = dis
         While auxA >= 0
-            If Not (auxA = 0) Then
-                If (altuera - auxA >= 0) Then
-                    taula(altuera - auxA, zabalera).BackgroundImage = sgta.jokoa.My.Resources.water
-                End If
-                If (altuera + auxA < Sistema.getTable.getAltuera()) Then
-                    taula(altuera + auxA, zabalera).BackgroundImage = sgta.jokoa.My.Resources.water
-                End If
-            End If
             While (auxA + auxZ <= dis)
-                If (altuera - auxA >= 0) And (zabalera - auxZ >= 0) Then
-                    taula(altuera - auxA, zabalera - auxZ).BackgroundImage = sgta.jokoa.My.Resources.water
+                If (altuera - auxA >= 0) And (zabalera - auxZ >= 0) _
+                And (altuera - auxA <> altuera Or zabalera - auxZ <> zabalera) Then
+                    If Not Sistema.pertsonairikDu(altuera - auxA, zabalera - auxZ) Then
+                        taula(altuera - auxA, zabalera - auxZ).BackgroundImage = Image.FromFile("../../../argazkiak/floresiñas_azul.png")
+                    End If
                 End If
-                If (altuera - auxA >= 0) And (zabalera + auxZ < Sistema.getTable.getZabalera()) Then
-                    taula(altuera - auxA, zabalera + auxZ).BackgroundImage = sgta.jokoa.My.Resources.water
+                If (altuera - auxA >= 0) And (zabalera + auxZ < Sistema.getTable.getZabalera()) _
+                And (altuera - auxA <> altuera Or zabalera + auxZ <> zabalera) Then
+                    If Not Sistema.pertsonairikDu(altuera - auxA, zabalera + auxZ) Then
+                        taula(altuera - auxA, zabalera + auxZ).BackgroundImage = Image.FromFile("../../../argazkiak/floresiñas_azul.png")
+                    End If
                 End If
-                If (altuera + auxA < Sistema.getTable.getAltuera()) And (zabalera - auxZ >= 0) Then
-                    taula(altuera + auxA, zabalera - auxZ).BackgroundImage = sgta.jokoa.My.Resources.water
+                If (altuera + auxA < Sistema.getTable.getAltuera()) And (zabalera - auxZ >= 0) _
+                And (altuera + auxA <> altuera Or zabalera - auxZ <> zabalera) Then
+                    If Not Sistema.pertsonairikDu(altuera + auxA, zabalera - auxZ) Then
+                        taula(altuera + auxA, zabalera - auxZ).BackgroundImage = Image.FromFile("../../../argazkiak/floresiñas_azul.png")
+                    End If
                 End If
-                If (altuera + auxA < Sistema.getTable.getAltuera()) And (zabalera + auxZ < Sistema.getTable.getZabalera()) Then
-                    taula(altuera + auxA, zabalera + auxZ).BackgroundImage = sgta.jokoa.My.Resources.water
+                If (altuera + auxA < Sistema.getTable.getAltuera()) And (zabalera + auxZ < Sistema.getTable.getZabalera()) _
+                And (altuera + auxA <> altuera Or zabalera + auxZ <> zabalera) Then
+                    If Not Sistema.pertsonairikDu(altuera + auxA, zabalera + auxZ) Then
+                        taula(altuera + auxA, zabalera + auxZ).BackgroundImage = Image.FromFile("../../../argazkiak/floresiñas_azul.png")
+                    End If
                 End If
                 auxZ += 1
             End While
@@ -95,26 +105,30 @@ Public Class ITablero
         Dim auxZ As Integer = 0
         Dim auxA As Integer = dis
         While auxA >= 0
-            If Not (auxA = 0) Then
-                If (altuera - auxA >= 0) Then
-                    taula(altuera - auxA, zabalera).BackColor = Color.Red
-                End If
-                If (altuera + auxA < Sistema.getTable.getAltuera()) Then
-                    taula(altuera + auxA, zabalera).BackColor = Color.Red
-                End If
-            End If
             While (auxA + auxZ <= dis)
-                If (altuera - auxA >= 0) And (zabalera - auxZ >= 0) Then
-                    taula(altuera - auxA, zabalera - auxZ).BackColor = Color.Red
+                If (altuera - auxA >= 0) And (zabalera - auxZ >= 0) _
+                And (altuera - auxA <> altuera Or zabalera - auxZ <> zabalera) Then
+                    If Not Sistema.pertsonairikDu(altuera - auxA, zabalera - auxZ) Then
+                        taula(altuera - auxA, zabalera - auxZ).BackgroundImage = Image.FromFile("../../../argazkiak/floresiñas_rojas.png")
+                    End If
                 End If
-                If (altuera - auxA >= 0) And (zabalera + auxZ < Sistema.getTable.getZabalera()) Then
-                    taula(altuera - auxA, zabalera + auxZ).BackColor = Color.Red
+                If (altuera - auxA >= 0) And (zabalera + auxZ < Sistema.getTable.getZabalera()) _
+                And (altuera - auxA <> altuera Or zabalera + auxZ <> zabalera) Then
+                    If Not Sistema.pertsonairikDu(altuera - auxA, zabalera + auxZ) Then
+                        taula(altuera - auxA, zabalera + auxZ).BackgroundImage = Image.FromFile("../../../argazkiak/floresiñas_rojas.png")
+                    End If
                 End If
-                If (altuera + auxA < Sistema.getTable.getAltuera()) And (zabalera - auxZ >= 0) Then
-                    taula(altuera + auxA, zabalera - auxZ).BackColor = Color.Red
+                If (altuera + auxA < Sistema.getTable.getAltuera()) And (zabalera - auxZ >= 0) _
+                And (altuera + auxA <> altuera Or zabalera - auxZ <> zabalera) Then
+                    If Not Sistema.pertsonairikDu(altuera + auxA, zabalera - auxZ) Then
+                        taula(altuera + auxA, zabalera - auxZ).BackgroundImage = Image.FromFile("../../../argazkiak/floresiñas_rojas.png")
+                    End If
                 End If
-                If (altuera + auxA < Sistema.getTable.getAltuera()) And (zabalera + auxZ < Sistema.getTable.getZabalera()) Then
-                    taula(altuera + auxA, zabalera + auxZ).BackColor = Color.Red
+                If (altuera + auxA < Sistema.getTable.getAltuera()) And (zabalera + auxZ < Sistema.getTable.getZabalera()) _
+                And (altuera + auxA <> altuera Or zabalera + auxZ <> zabalera) Then
+                    If Not Sistema.pertsonairikDu(altuera + auxA, zabalera + auxZ) Then
+                        taula(altuera + auxA, zabalera + auxZ).BackgroundImage = Image.FromFile("../../../argazkiak/floresiñas_rojas.png")
+                    End If
                 End If
                 auxZ += 1
             End While
@@ -129,26 +143,30 @@ Public Class ITablero
         Dim auxZ As Integer = 0
         Dim auxA As Integer = dis
         While auxA >= 0
-            If Not (auxA = 0) Then
-                If (altuera - auxA >= 0) Then
-                    taula(altuera - auxA, zabalera).BackgroundImage = sgta.jokoa.My.Resources.floresiñas
-                End If
-                If (altuera + auxA < Sistema.getTable.getAltuera()) Then
-                    taula(altuera + auxA, zabalera).BackgroundImage = sgta.jokoa.My.Resources.floresiñas
-                End If
-            End If
             While (auxA + auxZ <= dis)
-                If (altuera - auxA >= 0) And (zabalera - auxZ >= 0) Then
-                    taula(altuera - auxA, zabalera - auxZ).BackgroundImage = sgta.jokoa.My.Resources.floresiñas
+                If (altuera - auxA >= 0) And (zabalera - auxZ >= 0) _
+                And (altuera - auxA <> altuera Or zabalera - auxZ <> zabalera) Then
+                    If Not Sistema.pertsonairikDu(altuera - auxA, zabalera - auxZ) Then
+                        taula(altuera - auxA, zabalera - auxZ).BackgroundImage = Image.FromFile("../../../argazkiak/floresiñas.png")
+                    End If
                 End If
-                If (altuera - auxA >= 0) And (zabalera + auxZ < Sistema.getTable.getZabalera()) Then
-                    taula(altuera - auxA, zabalera + auxZ).BackgroundImage = sgta.jokoa.My.Resources.floresiñas
+                If (altuera - auxA >= 0) And (zabalera + auxZ < Sistema.getTable.getZabalera()) _
+                And (altuera - auxA <> altuera Or zabalera + auxZ <> zabalera) Then
+                    If Not Sistema.pertsonairikDu(altuera - auxA, zabalera + auxZ) Then
+                        taula(altuera - auxA, zabalera + auxZ).BackgroundImage = Image.FromFile("../../../argazkiak/floresiñas.png")
+                    End If
                 End If
-                If (altuera + auxA < Sistema.getTable.getAltuera()) And (zabalera - auxZ >= 0) Then
-                    taula(altuera + auxA, zabalera - auxZ).BackgroundImage = sgta.jokoa.My.Resources.floresiñas
+                If (altuera + auxA < Sistema.getTable.getAltuera()) And (zabalera - auxZ >= 0) _
+                And (altuera + auxA <> altuera Or zabalera - auxZ <> zabalera) Then
+                    If Not Sistema.pertsonairikDu(altuera + auxA, zabalera - auxZ) Then
+                        taula(altuera + auxA, zabalera - auxZ).BackgroundImage = Image.FromFile("../../../argazkiak/floresiñas.png")
+                    End If
                 End If
-                If (altuera + auxA < Sistema.getTable.getAltuera()) And (zabalera + auxZ < Sistema.getTable.getZabalera()) Then
-                    taula(altuera + auxA, zabalera + auxZ).BackgroundImage = sgta.jokoa.My.Resources.floresiñas
+                If (altuera + auxA < Sistema.getTable.getAltuera()) And (zabalera + auxZ < Sistema.getTable.getZabalera()) _
+                And (altuera + auxA <> altuera Or zabalera + auxZ <> zabalera) Then
+                    If Not Sistema.pertsonairikDu(altuera + auxA, zabalera + auxZ) Then
+                        taula(altuera + auxA, zabalera + auxZ).BackgroundImage = Image.FromFile("../../../argazkiak/floresiñas.png")
+                    End If
                 End If
                 auxZ += 1
             End While
@@ -164,12 +182,20 @@ Public Class ITablero
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Button1.Enabled = False
         Dim fase As String = "Eraso Fasea"
         lblFase.Text = fase
         Sistema.faseAldatu(fase)
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Button1.Enabled = True
+        Button2.Enabled = True
+        If Sistema.currentDu() Then
+            Dim k As Kasilla = Sistema.getCurrent
+            Dim koordenadak() As Integer = k.getKoordenadak
+            quitColors(koordenadak(0), koordenadak(1), k.getPertsonaia.getMov)
+        End If
         lblFase.Text = "Hasierako Fasea"
         Sistema.txandaAldatu()
         lblTxanda.Text = Sistema.getJokalariAktibo().getIzena()
@@ -224,6 +250,8 @@ Public Class ITablero
         If k.getPertsonaia.mugimenduaHeltzenDa(koordenadak(0), koordenadak(1), altuera, zabalera) Then
             quitColors(koordenadak(0), koordenadak(1), k.getPertsonaia.getMov)
             Sistema.mugitu(koordenadak(0), koordenadak(1), altuera, zabalera)
+            taula(koordenadak(0), koordenadak(1)).BackgroundImage = Image.FromFile("../../../argazkiak/floresiñas.png")
+            pertsonaiaKokatu(altuera, zabalera)
             'aqui habria que cambiar al personaje de casilla
         End If
     End Sub
@@ -231,7 +259,12 @@ Public Class ITablero
     Private Sub erasoa(ByVal altuera As Integer, ByVal zabalera As Integer)
         Dim k As Kasilla = Sistema.getCurrent
         Dim koordenadak() As Integer = k.getKoordenadak
-        If k.getPertsonaia.erasoaHeltzenDa(koordenadak(0), koordenadak(1), altuera, zabalera) Then
+        MsgBox(k.getPertsonaia.erasoaHeltzenDa(koordenadak(0), koordenadak(1), altuera, zabalera).ToString)
+        MsgBox(Sistema.pertsonairikDu(altuera, zabalera).ToString)
+        MsgBox((Not Sistema.pertsonairikDu(altuera, zabalera)).ToString)
+        If k.getPertsonaia.erasoaHeltzenDa(koordenadak(0), koordenadak(1), altuera, zabalera) _
+        And Sistema.pertsonairikDu(altuera, zabalera) _
+        And Not Sistema.pertsonaiAktiboaDu(altuera, zabalera) Then
             quitColors(koordenadak(0), koordenadak(1), k.getPertsonaia.getAlk)
             Sistema.eraso(altuera, zabalera)
             If Not Sistema.pertsonairikDu(altuera, zabalera) Then
@@ -242,7 +275,18 @@ Public Class ITablero
     End Sub
 
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
+        Dim k As Kasilla = Sistema.getCurrent
+        Dim koordenadak() As Integer = k.getKoordenadak
+        If Sistema.getFase.Equals("Mugimendu Fasea") Then
+            quitColors(koordenadak(0), koordenadak(1), k.getPertsonaia.getMov)
+        ElseIf Sistema.getFase.Equals("Eraso Fasea") Then
+            quitColors(koordenadak(0), koordenadak(1), k.getPertsonaia.getAlk)
+        End If
         Sistema.cancelCurrent()
+    End Sub
+
+    Private Sub pertsonaiaKokatu(ByVal altuera As Integer, ByVal zabalera As Integer)
+        taula(altuera, zabalera).BackgroundImage = Image.FromFile("../../../argazkiak/floresiñas_soldado.png")
     End Sub
 
 End Class

@@ -14,3 +14,11 @@ C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.logika\
 C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.logika\obj\Debug\sgta.logika.dll
 C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.logika\obj\Debug\sgta.logika.xml
 C:\Users\Mielotxim\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.logika\obj\Debug\sgta.logika.pdb
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.logika\obj\Debug\sgta_logika.vbprojResolveAssemblyReference.cache
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.logika\bin\Debug\sgta.jokoa.exe
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.logika\bin\Debug\MySql.Data.dll
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.logika\bin\Debug\sgta.db.dll
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.logika\bin\Debug\sgta.jokoa.pdb
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.logika\bin\Debug\sgta.jokoa.xml
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.logika\bin\Debug\sgta.db.pdb
+C:\Users\Oier\Documents\Visual Studio 2012\Projects\sgta.jokoa\sgta.logika\bin\Debug\sgta.db.xml

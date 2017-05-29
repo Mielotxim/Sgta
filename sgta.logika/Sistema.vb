@@ -27,6 +27,7 @@
         fasea = "Hasierako Fasea"
         txanda = txandaKop Mod jokalari.getKop()
         txandaKop += 1
+        currentK = Nothing
     End Sub
 
     Public Shared Function getTable() As Tablero

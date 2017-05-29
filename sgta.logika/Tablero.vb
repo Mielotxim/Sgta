@@ -40,8 +40,6 @@
     End Function
 
     Function pertsonairikDu(altuera As Integer, zabalera As Integer) As Boolean
-        MsgBox(altuera)
-        MsgBox(zabalera)
         Return nireTablero(altuera)(zabalera).pertsonaiaDu()
     End Function
 

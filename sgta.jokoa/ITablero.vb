@@ -16,7 +16,7 @@ Public Class ITablero
         s = New System.Media.SoundPlayer(ruta + "\song1.wav")
         s.Play()
 
-
+        PictureBox1.BackgroundImage = Image.FromFile("../../../argazkiak/foto.png")
         lblFase.Text = "Hasierako Fasea"
         For altuera As Integer = 0 To (Sistema.getTable().getAltuera - 1)
             For zabalera As Integer = 0 To (Sistema.getTable().getZabalera - 1)

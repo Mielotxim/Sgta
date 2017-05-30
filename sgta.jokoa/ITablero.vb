@@ -27,7 +27,15 @@ Public Class ITablero
             Next
         Next
         pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2, 1)
+        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2, 0)
+        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2 + 1, 2)
+        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2 - 1, 2)
+
         pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2, Sistema.getTable.getZabalera - 2)
+        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2, Sistema.getTable.getZabalera - 1)
+        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2 + 1, Sistema.getTable.getZabalera - 3)
+        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2 - 1, Sistema.getTable.getZabalera - 3)
+
         lblTxanda.Text = Sistema.getJokalariAktibo().getIzena()
         lblAkzio.Text = Sistema.getAkzio()
     End Sub
@@ -254,7 +262,7 @@ Public Class ITablero
 
     Private Sub pertsonaiarenErasoaBistaratu(ByVal altuera As Integer, ByVal zabalera As Integer)
         If Sistema.pertsonaiAktiboaDu(altuera, zabalera) Then
-            setColorRed(altuera, zabalera, Sistema.getPertsonaia(altuera, zabalera).getMov)
+            setColorRed(altuera, zabalera, Sistema.getPertsonaia(altuera, zabalera).getAlk)
         Else
             pertsonaiarenDatuak(altuera, zabalera)
         End If
@@ -298,13 +306,15 @@ Public Class ITablero
 
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
         Dim k As Kasilla = Sistema.getCurrent
-        Dim koordenadak() As Integer = k.getKoordenadak
-        If Sistema.getFase.Equals("Mugimendu Fasea") Then
-            quitColors(koordenadak(0), koordenadak(1), k.getPertsonaia.getMov)
-        ElseIf Sistema.getFase.Equals("Eraso Fasea") Then
-            quitColors(koordenadak(0), koordenadak(1), k.getPertsonaia.getAlk)
+        If Not k Is Nothing Then
+            Dim koordenadak() As Integer = k.getKoordenadak
+            If Sistema.getFase.Equals("Mugimendu Fasea") Then
+                quitColors(koordenadak(0), koordenadak(1), k.getPertsonaia.getMov)
+            ElseIf Sistema.getFase.Equals("Eraso Fasea") Then
+                quitColors(koordenadak(0), koordenadak(1), k.getPertsonaia.getAlk)
+            End If
+            Sistema.cancelCurrent()
         End If
-        Sistema.cancelCurrent()
     End Sub
 
     Private Sub pertsonaiaKokatu(ByVal altuera As Integer, ByVal zabalera As Integer)

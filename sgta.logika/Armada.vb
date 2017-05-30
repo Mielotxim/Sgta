@@ -12,6 +12,14 @@ Public Class Armada
         solKop = 4
     End Sub
 
+    Public Function getSoldadua(ByVal a As Integer) As Soldadu
+        If a < solKop Then
+            Return listaSoldadu(a)
+        Else
+            Return Nothing
+        End If
+    End Function
+
     Public Sub soldaduaGehitu(ByVal s As String, ByVal taldea As String)
         If solKop < 10 Then
             Dim soldaten As Soldadu

@@ -32,8 +32,14 @@
     Public Sub jokalariakSartu(jokalari As JokalariZerrenda)
         'los situamos cada uno a un lado, tambien podria usarse un random para hacerlo mas aleatorio
         nireTablero(getAltuera() / 2)(1).pertsonaiaSartu(jokalari.getJokalari(0))
-        nireTablero(getAltuera() / 2)(2).pertsonaiaSartu(jokalari.getJokalari(0))
+        nireTablero(getAltuera() / 2 + 1)(2).pertsonaiaSartu(jokalari.getJokalari(0).getArmada.getSoldadua(0))
+        nireTablero(getAltuera() / 2 - 1)(2).pertsonaiaSartu(jokalari.getJokalari(0).getArmada.getSoldadua(1))
+        nireTablero(getAltuera() / 2)(0).pertsonaiaSartu(jokalari.getJokalari(0).getArmada.getSoldadua(2))
+
         nireTablero(getAltuera() / 2)(getZabalera() - 2).pertsonaiaSartu(jokalari.getJokalari(1))
+        nireTablero(getAltuera() / 2 + 1)(getZabalera() - 3).pertsonaiaSartu(jokalari.getJokalari(1).getArmada.getSoldadua(0))
+        nireTablero(getAltuera() / 2 - 1)(getZabalera() - 3).pertsonaiaSartu(jokalari.getJokalari(1).getArmada.getSoldadua(1))
+        nireTablero(getAltuera() / 2)(getZabalera() - 1).pertsonaiaSartu(jokalari.getJokalari(1).getArmada.getSoldadua(2))
     End Sub
 
     Function getKasilla(alt As Integer, zab As Integer) As Kasilla

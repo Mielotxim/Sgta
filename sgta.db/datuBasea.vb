@@ -33,4 +33,11 @@ Public Class datuBasea
         cmdPertsonaiak = New MySqlCommand(strSQL, conn)
         Return (cmdPertsonaiak.ExecuteReader())
     End Function
+
+    Public Shared Function SoldaduakLortu(ByVal a As String, ByVal b As String) As MySqlDataReader
+        Dim cmdSoldaduak As MySqlCommand
+        Dim strSQl = "SELECT * FROM Soldadua WHERE armada LIKE '" + a + "' and mota LIKE '" + b + "'"
+        cmdSoldaduak = New MySqlCommand(strSQl, conn)
+        Return (cmdSoldaduak.ExecuteReader())
+    End Function
 End Class

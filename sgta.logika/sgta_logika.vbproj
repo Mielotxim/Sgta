@@ -43,6 +43,10 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.5.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\sgta.db\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="sgta.jokoa">
       <HintPath>..\sgta.jokoa\bin\Debug\sgta.jokoa.exe</HintPath>
     </Reference>
@@ -109,6 +113,12 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\sgta.db\sgta_db.vbproj">
+      <Project>{0e12b8cf-8c90-481a-83a7-e441dac83012}</Project>
+      <Name>sgta_db</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

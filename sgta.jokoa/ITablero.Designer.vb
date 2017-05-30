@@ -50,6 +50,7 @@ Partial Class ITablero
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.statPanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,6 +59,7 @@ Partial Class ITablero
         'Panel1
         '
         Me.Panel1.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Panel1.Controls.Add(Me.Button4)
         Me.Panel1.Controls.Add(Me.lblAkzio)
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.lblTxanda)
@@ -293,7 +295,7 @@ Partial Class ITablero
         '
         'btnCancel
         '
-        Me.btnCancel.Location = New System.Drawing.Point(20, 556)
+        Me.btnCancel.Location = New System.Drawing.Point(65, 511)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(83, 23)
         Me.btnCancel.TabIndex = 6
@@ -346,6 +348,15 @@ Partial Class ITablero
         Me.Panel2.Size = New System.Drawing.Size(1019, 612)
         Me.Panel2.TabIndex = 1
         '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(55, 573)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(103, 23)
+        Me.Button4.TabIndex = 15
+        Me.Button4.Text = "Musika Kendu"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'ITablero
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -392,4 +403,5 @@ Partial Class ITablero
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents lblAkzio As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Button4 As System.Windows.Forms.Button
 End Class

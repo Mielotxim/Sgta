@@ -8,8 +8,15 @@ Public Class ITablero
 
     Dim taula(Sistema.getTable().getAltuera - 1, Sistema.getTable().getZabalera - 1) As PictureBox
     'Dim taula(100, 100) As PictureBox
+    Dim s As System.Media.SoundPlayer
 
     Private Sub Tablero_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim ruta As String
+        ruta = My.Application.Info.DirectoryPath
+        s = New System.Media.SoundPlayer(ruta + "\song1.wav")
+        s.Play()
+
+
         lblFase.Text = "Hasierako Fasea"
         For altuera As Integer = 0 To (Sistema.getTable().getAltuera - 1)
             For zabalera As Integer = 0 To (Sistema.getTable().getZabalera - 1)
@@ -338,4 +345,13 @@ Public Class ITablero
         datuBasea.ItxiKonexioa()
     End Sub
 
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        If Button4.Text = "Musika Kendu" Then
+            s.Stop()
+            Button4.Text = "Musika Jarri"
+        Else
+            s.Play()
+            Button4.Text = "Musika Kendu"
+        End If
+    End Sub
 End Class

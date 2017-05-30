@@ -34,12 +34,14 @@
         nireTablero(getAltuera() / 2)(1).pertsonaiaSartu(jokalari.getJokalari(0))
         nireTablero(getAltuera() / 2 + 1)(2).pertsonaiaSartu(jokalari.getJokalari(0).getArmada.getSoldadua(0))
         nireTablero(getAltuera() / 2 - 1)(2).pertsonaiaSartu(jokalari.getJokalari(0).getArmada.getSoldadua(1))
-        nireTablero(getAltuera() / 2)(0).pertsonaiaSartu(jokalari.getJokalari(0).getArmada.getSoldadua(2))
+        nireTablero(getAltuera() / 2 + 1)(0).pertsonaiaSartu(jokalari.getJokalari(0).getArmada.getSoldadua(2))
+        nireTablero(getAltuera() / 2 - 1)(0).pertsonaiaSartu(jokalari.getJokalari(0).getArmada.getSoldadua(3))
 
         nireTablero(getAltuera() / 2)(getZabalera() - 2).pertsonaiaSartu(jokalari.getJokalari(1))
         nireTablero(getAltuera() / 2 + 1)(getZabalera() - 3).pertsonaiaSartu(jokalari.getJokalari(1).getArmada.getSoldadua(0))
         nireTablero(getAltuera() / 2 - 1)(getZabalera() - 3).pertsonaiaSartu(jokalari.getJokalari(1).getArmada.getSoldadua(1))
-        nireTablero(getAltuera() / 2)(getZabalera() - 1).pertsonaiaSartu(jokalari.getJokalari(1).getArmada.getSoldadua(2))
+        nireTablero(getAltuera() / 2 + 1)(getZabalera() - 1).pertsonaiaSartu(jokalari.getJokalari(1).getArmada.getSoldadua(2))
+        nireTablero(getAltuera() / 2 - 1)(getZabalera() - 1).pertsonaiaSartu(jokalari.getJokalari(1).getArmada.getSoldadua(3))
     End Sub
 
     Function getKasilla(alt As Integer, zab As Integer) As Kasilla

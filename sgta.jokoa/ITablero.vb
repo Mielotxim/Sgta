@@ -36,12 +36,14 @@ Public Class ITablero
             Next
         Next
         pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2, 1, Sistema.getPertsonaia(Sistema.getTable.getAltuera() / 2, 1))
-        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2, 0, Sistema.getPertsonaia(Sistema.getTable.getAltuera() / 2, 0))
+        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2 + 1, 0, Sistema.getPertsonaia(Sistema.getTable.getAltuera() / 2 + 1, 0))
+        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2 - 1, 0, Sistema.getPertsonaia(Sistema.getTable.getAltuera() / 2 - 1, 0))
         pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2 + 1, 2, Sistema.getPertsonaia(Sistema.getTable.getAltuera() / 2 + 1, 2))
         pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2 - 1, 2, Sistema.getPertsonaia(Sistema.getTable.getAltuera() / 2 - 1, 2))
 
         pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2, Sistema.getTable.getZabalera - 2, Sistema.getPertsonaia(Sistema.getTable.getAltuera() / 2, Sistema.getTable.getZabalera - 2))
-        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2, Sistema.getTable.getZabalera - 1, Sistema.getPertsonaia(Sistema.getTable.getAltuera() / 2, Sistema.getTable.getZabalera - 1))
+        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2 + 1, Sistema.getTable.getZabalera - 1, Sistema.getPertsonaia(Sistema.getTable.getAltuera() / 2 + 1, Sistema.getTable.getZabalera - 1))
+        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2 - 1, Sistema.getTable.getZabalera - 1, Sistema.getPertsonaia(Sistema.getTable.getAltuera() / 2 - 1, Sistema.getTable.getZabalera - 1))
         pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2 + 1, Sistema.getTable.getZabalera - 3, Sistema.getPertsonaia(Sistema.getTable.getAltuera() / 2 + 1, Sistema.getTable.getZabalera - 3))
         pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2 - 1, Sistema.getTable.getZabalera - 3, Sistema.getPertsonaia(Sistema.getTable.getAltuera() / 2 - 1, Sistema.getTable.getZabalera - 3))
 

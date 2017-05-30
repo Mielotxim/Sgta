@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.5.2
--- https://www.phpmyadmin.net/
+-- version 4.5.1
+-- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-05-2017 a las 13:38:03
--- Versión del servidor: 10.1.21-MariaDB
--- Versión de PHP: 5.6.30
+-- Tiempo de generación: 30-05-2017 a las 14:44:15
+-- Versión del servidor: 10.1.13-MariaDB
+-- Versión de PHP: 5.6.20
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -103,11 +103,11 @@ INSERT INTO `soldadua` (`mota`, `armada`, `bizitzaP`, `atake`, `defensa`, `mugik
 ('sniper', 'Japonia', 20, 30, 1, 2, 7, 'floresiñas_sniper'),
 ('sniper', 'Txina', 20, 30, 1, 2, 7, 'floresiñas_sniper'),
 ('sniper', 'USA', 20, 30, 1, 2, 7, 'floresiñas_sniper'),
-('tank', 'Errusia', 80, 22, 10, 3, 4, 'floresiñas_soldado'),
-('tank', 'Ipar Korea', 50, 25, 15, 1, 3, 'floresiñas_soldado'),
-('tank', 'Japonia', 55, 15, 12, 2, 6, 'floresiñas_soldado'),
-('tank', 'Txina', 30, 36, 10, 4, 4, 'floresiñas_soldado'),
-('tank', 'USA', 50, 27, 14, 3, 3, 'floresiñas_soldado');
+('tank', 'Errusia', 80, 22, 10, 3, 4, 'floresiñas_tank'),
+('tank', 'Ipar Korea', 50, 25, 15, 1, 3, 'floresiñas_tank'),
+('tank', 'Japonia', 55, 15, 12, 2, 6, 'floresiñas_tank'),
+('tank', 'Txina', 30, 36, 10, 4, 4, 'floresiñas_tank'),
+('tank', 'USA', 50, 27, 14, 3, 3, 'floresiñas_tank');
 
 --
 -- Índices para tablas volcadas

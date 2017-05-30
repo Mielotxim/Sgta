@@ -54,7 +54,7 @@
         'formula provisional
         'hace falta testear el daño para hacerlo justo
         Dim var As Integer = (Math.Floor((100 - 75 + 1) * Rnd()) + 50) / 100
-        hp -= (var * (25 * atkR / (def * 1.4)))
+        hp -= (var * (25 * atkR / (def * 1.6)))
         If hp <= 0 Then
             hp = 0
         End If

@@ -1,6 +1,8 @@
 ﻿Imports sgta.logika
 Imports System
 Imports System.IO
+Imports sgta.db
+Imports MySql.Data.MySqlClient
 
 Public Class ITablero
 
@@ -26,15 +28,15 @@ Public Class ITablero
                 Panel2.Controls.Add(b)
             Next
         Next
-        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2, 1)
-        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2, 0)
-        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2 + 1, 2)
-        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2 - 1, 2)
+        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2, 1, Sistema.getPertsonaia(Sistema.getTable.getAltuera() / 2, 1))
+        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2, 0, Sistema.getPertsonaia(Sistema.getTable.getAltuera() / 2, 0))
+        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2 + 1, 2, Sistema.getPertsonaia(Sistema.getTable.getAltuera() / 2 + 1, 2))
+        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2 - 1, 2, Sistema.getPertsonaia(Sistema.getTable.getAltuera() / 2 - 1, 2))
 
-        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2, Sistema.getTable.getZabalera - 2)
-        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2, Sistema.getTable.getZabalera - 1)
-        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2 + 1, Sistema.getTable.getZabalera - 3)
-        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2 - 1, Sistema.getTable.getZabalera - 3)
+        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2, Sistema.getTable.getZabalera - 2, Sistema.getPertsonaia(Sistema.getTable.getAltuera() / 2, Sistema.getTable.getZabalera - 2))
+        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2, Sistema.getTable.getZabalera - 1, Sistema.getPertsonaia(Sistema.getTable.getAltuera() / 2, Sistema.getTable.getZabalera - 1))
+        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2 + 1, Sistema.getTable.getZabalera - 3, Sistema.getPertsonaia(Sistema.getTable.getAltuera() / 2 + 1, Sistema.getTable.getZabalera - 3))
+        pertsonaiaKokatu(Sistema.getTable.getAltuera() / 2 - 1, Sistema.getTable.getZabalera - 3, Sistema.getPertsonaia(Sistema.getTable.getAltuera() / 2 - 1, Sistema.getTable.getZabalera - 3))
 
         lblTxanda.Text = Sistema.getJokalariAktibo().getIzena()
         lblAkzio.Text = Sistema.getAkzio()
@@ -273,9 +275,9 @@ Public Class ITablero
         Dim koordenadak() As Integer = k.getKoordenadak
         If k.getPertsonaia.mugimenduaHeltzenDa(koordenadak(0), koordenadak(1), altuera, zabalera) Then
             quitColors(koordenadak(0), koordenadak(1), k.getPertsonaia.getMov)
+            pertsonaiaKokatu(altuera, zabalera, k.getPertsonaia)
             Sistema.mugitu(koordenadak(0), koordenadak(1), altuera, zabalera)
             taula(koordenadak(0), koordenadak(1)).BackgroundImage = Image.FromFile("../../../argazkiak/floresiñas.png")
-            pertsonaiaKokatu(altuera, zabalera)
             'aqui habria que cambiar al personaje de casilla
         End If
     End Sub
@@ -317,8 +319,23 @@ Public Class ITablero
         End If
     End Sub
 
-    Private Sub pertsonaiaKokatu(ByVal altuera As Integer, ByVal zabalera As Integer)
-        taula(altuera, zabalera).BackgroundImage = Image.FromFile("../../../argazkiak/floresiñas_soldado.png")
+    Private Sub pertsonaiaKokatu(ByVal altuera As Integer, ByVal zabalera As Integer, ByRef p As Pertsonaia)
+        Dim img As String = ""
+        datuBasea.Konektatu()
+        Dim dr As MySqlDataReader
+        If p.GetType().Equals(GetType(Jokalari)) Then
+            dr = datuBasea.PertsonaiaLortu(DirectCast(p, Jokalari).getIzena())
+            If dr.Read Then
+                img = dr.Item(7)
+            End If
+        Else
+            dr = datuBasea.SoldaduakLortu(DirectCast(p, Soldadu).getTaldea(), DirectCast(p, Soldadu).getMota())
+            If dr.Read Then
+                img = dr.Item(7)
+            End If
+        End If
+        taula(altuera, zabalera).BackgroundImage = Image.FromFile("../../../argazkiak/" + img + ".png")
+        datuBasea.ItxiKonexioa()
     End Sub
 
 End Class

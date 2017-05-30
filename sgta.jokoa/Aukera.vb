@@ -29,6 +29,8 @@ Public Class Aukera
         ComboBox2.Items.Add("Erraza")
         ComboBox2.Items.Add("Normala")
         ComboBox2.Items.Add("Zaila")
+        ComboBox1.SelectedIndex = 0
+        ComboBox2.SelectedIndex = 0
     End Sub
 
 
@@ -46,9 +48,6 @@ Public Class Aukera
         If jz.getKop < 2 Then
             MsgBox("Jokalariak falta dira")
         Else
-            'MsgBox(jz.getJokalari(0).getIzena)
-            'MsgBox(jz.getJokalari(1).getIzena)
-            MsgBox(ComboBox2.SelectedItem.ToString)
             Sistema.jokoaHasi(ComboBox2.SelectedItem.ToString, jz)
             Dim form As ITablero
             form = New ITablero

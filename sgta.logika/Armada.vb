@@ -55,7 +55,7 @@ Public Class Armada
             End If
             i += 1
         End While
-
+        solKop -= 1
     End Sub
 
 End Class

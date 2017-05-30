@@ -6,7 +6,7 @@ Public Class SoldaduFactory
     Public Function soldaduaSortu(ByVal mota As String, ByVal taldea As String) As Soldadu
         datuBasea.Konektatu()
         Dim dr As MySqlDataReader = datuBasea.SoldaduakLortu(taldea, mota)
-        Dim j As Soldadu
+        Dim j As Soldadu = Nothing
         If dr.Read Then
             Dim iz As String = dr.Item(0)
             Dim tal As String = dr.Item(1)

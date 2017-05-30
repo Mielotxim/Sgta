@@ -24,9 +24,10 @@ Partial Class ITablero
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ITablero))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lblAkzio = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.lblTxanda = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.lblFase = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.statPanel = New System.Windows.Forms.TableLayoutPanel()
@@ -49,8 +50,6 @@ Partial Class ITablero
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.lblAkzio = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.statPanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -63,7 +62,6 @@ Partial Class ITablero
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.lblTxanda)
         Me.Panel1.Controls.Add(Me.Label7)
-        Me.Panel1.Controls.Add(Me.Button5)
         Me.Panel1.Controls.Add(Me.lblFase)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.statPanel)
@@ -76,6 +74,24 @@ Partial Class ITablero
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(214, 612)
         Me.Panel1.TabIndex = 0
+        '
+        'lblAkzio
+        '
+        Me.lblAkzio.AutoSize = True
+        Me.lblAkzio.Location = New System.Drawing.Point(105, 360)
+        Me.lblAkzio.Name = "lblAkzio"
+        Me.lblAkzio.Size = New System.Drawing.Size(43, 13)
+        Me.lblAkzio.TabIndex = 14
+        Me.lblAkzio.Text = "lblAkzio"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(20, 360)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(67, 13)
+        Me.Label5.TabIndex = 13
+        Me.Label5.Text = "AKZIO KOP:"
         '
         'lblTxanda
         '
@@ -94,15 +110,6 @@ Partial Class ITablero
         Me.Label7.Size = New System.Drawing.Size(57, 13)
         Me.Label7.TabIndex = 11
         Me.Label7.Text = "TXANDA: "
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(117, 556)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(80, 23)
-        Me.Button5.TabIndex = 10
-        Me.Button5.Text = "Button5"
-        Me.Button5.UseVisualStyleBackColor = True
         '
         'lblFase
         '
@@ -339,24 +346,6 @@ Partial Class ITablero
         Me.Panel2.Size = New System.Drawing.Size(1019, 612)
         Me.Panel2.TabIndex = 1
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(20, 360)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(67, 13)
-        Me.Label5.TabIndex = 13
-        Me.Label5.Text = "AKZIO KOP:"
-        '
-        'lblAkzio
-        '
-        Me.lblAkzio.AutoSize = True
-        Me.lblAkzio.Location = New System.Drawing.Point(105, 360)
-        Me.lblAkzio.Name = "lblAkzio"
-        Me.lblAkzio.Size = New System.Drawing.Size(43, 13)
-        Me.lblAkzio.TabIndex = 14
-        Me.lblAkzio.Text = "lblAkzio"
-        '
         'ITablero
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -401,7 +390,6 @@ Partial Class ITablero
     Friend WithEvents lblFase As System.Windows.Forms.Label
     Friend WithEvents lblTxanda As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents lblAkzio As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
 End Class

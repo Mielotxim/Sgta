@@ -40,4 +40,11 @@ Public Class datuBasea
         cmdSoldaduak = New MySqlCommand(strSQl, conn)
         Return (cmdSoldaduak.ExecuteReader())
     End Function
+
+    Public Shared Function PertsonaiaLortu(ByVal a As String) As MySqlDataReader
+        Dim cmdPertsonaia As MySqlCommand
+        Dim strSQL = "SELECT * FROM Pertsonaia WHERE izena = '" + a + "'"
+        cmdPertsonaia = New MySqlCommand(strSQL, conn)
+        Return (cmdPertsonaia.ExecuteReader())
+    End Function
 End Class

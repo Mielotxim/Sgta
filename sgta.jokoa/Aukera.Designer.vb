@@ -281,7 +281,6 @@ Partial Class Aukera
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.sgta.jokoa.My.Resources.Resources.select_character2
         Me.ClientSize = New System.Drawing.Size(552, 460)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.Label4)

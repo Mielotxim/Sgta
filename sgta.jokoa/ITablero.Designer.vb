@@ -24,6 +24,7 @@ Partial Class ITablero
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ITablero))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.lblAkzio = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.lblTxanda = New System.Windows.Forms.Label()
@@ -50,7 +51,6 @@ Partial Class ITablero
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.statPanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -59,6 +59,8 @@ Partial Class ITablero
         'Panel1
         '
         Me.Panel1.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Panel1.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Panel1.Controls.Add(Me.Button4)
         Me.Panel1.Controls.Add(Me.lblAkzio)
         Me.Panel1.Controls.Add(Me.Label5)
@@ -76,6 +78,15 @@ Partial Class ITablero
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(214, 612)
         Me.Panel1.TabIndex = 0
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(55, 573)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(103, 23)
+        Me.Button4.TabIndex = 15
+        Me.Button4.Text = "Musika Kendu"
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'lblAkzio
         '
@@ -133,6 +144,8 @@ Partial Class ITablero
         '
         'statPanel
         '
+        Me.statPanel.BackColor = System.Drawing.Color.SeaGreen
+        Me.statPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.statPanel.ColumnCount = 4
         Me.statPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.85792!))
         Me.statPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.22951!))
@@ -343,25 +356,18 @@ Partial Class ITablero
         'Panel2
         '
         Me.Panel2.AutoScroll = True
+        Me.Panel2.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Panel2.Location = New System.Drawing.Point(220, 0)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1019, 612)
         Me.Panel2.TabIndex = 1
         '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(55, 573)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(103, 23)
-        Me.Button4.TabIndex = 15
-        Me.Button4.Text = "Musika Kendu"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
         'ITablero
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.sgta.jokoa.My.Resources.Resources.Plain_Background
+        Me.BackColor = System.Drawing.Color.DimGray
         Me.ClientSize = New System.Drawing.Size(1239, 608)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)

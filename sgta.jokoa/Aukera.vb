@@ -9,6 +9,7 @@ Public Class Aukera
     Private jz As JokalariZerrenda
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        BackgroundImage = Image.FromFile("../../../argazkiak/select_character.jpg")
         jz = New JokalariZerrenda
         datuBasea.Konektatu()
         Dim dr As MySqlDataReader = datuBasea.PertsonaiakLortu()
@@ -72,19 +73,19 @@ Public Class Aukera
                 lblMov.Text = j.getMov
                 lblAlk.Text = j.getAlk
                 If j.getIzena = "Donald Trump" Then
-                    PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Trump1
+                    PictureBox1.BackgroundImage = Image.FromFile("../../../argazkiak/Trump.png")
                 End If
                 If j.getIzena = "Kim Yong Un" Then
-                    PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Koreano1
+                    PictureBox1.BackgroundImage = Image.FromFile("../../../argazkiak/Koreano.png")
                 End If
                 If j.getIzena = "Shinzo Abe" Then
-                    PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Japones1
+                    PictureBox1.BackgroundImage = Image.FromFile("../../../argazkiak/Japones.png")
                 End If
                 If j.getIzena = "Vladimir Putin" Then
-                    PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Putin1
+                    PictureBox1.BackgroundImage = Image.FromFile("../../../argazkiak/Putin.png")
                 End If
                 If j.getIzena = "Xi Jinping" Then
-                    PictureBox1.BackgroundImage = sgta.jokoa.My.Resources.Chino1
+                    PictureBox1.BackgroundImage = Image.FromFile("../../../argazkiak/Chino.png")
                 End If
             End If
             i += 1
